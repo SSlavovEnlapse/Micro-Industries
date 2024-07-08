@@ -1,0 +1,62 @@
+[
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Product Inquiry",
+        "Call Type Description": "A customer calls to inquire about the availability of a specific shoe product, request product information, or compare features and pricing across different products.",
+        "Common Inquiries": "Product features, pricing, availability, sizing, color options, and style"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Order Tracing",
+        "Call Type Description": "A customer calls to track the status of their order, query about delivery dates, or receive clarification on order-related queries.",
+        "Common Inquiries": "Order status, tracking number, delivery dates, payment options, and return policy"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Return/Exchange",
+        "Call Type Description": "A customer calls to initiate a return or exchange of a purchased shoe product, citing issues with sizing, fit, or quality.",
+        "Common Inquiries": "Return and exchange procedures, product acceptance, restocking fees, and refund policies"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Price Comparison",
+        "Call Type Description": "A customer calls to compare prices of a specific shoe product across different stores, both online and offline.",
+        "Common Inquiries": "Price comparison, product features, availability, and promotions"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Cancellation",
+        "Call Type Description": "A customer calls to cancel an existing order, amend their purchase, or change their order details.",
+        "Common Inquiries": "Cancellation policies, order changes, and refund procedures"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Promotional Offer",
+        "Call Type Description": "A sales representative calls to inform customers about new shoe products, promotions, discounts, or special offers.",
+        "Common Inquiries": "Promotions, discounts, product launches, and special offers"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Upselling",
+        "Call Type Description": "A sales representative calls to upsell customers on complementary shoe products, accessories, or services.",
+        "Common Inquiries": "Complementary products, accessories, and services"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Customer Feedback",
+        "Call Type Description": "A sales representative calls to gather customer feedback on their most recent shoe purchase or interaction with the store.",
+        "Common Inquiries": "Customer satisfaction, product quality, and service standards"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Survey",
+        "Call Type Description": "A sales representative calls to conduct a survey to gather customer feedback on the store's products, services, and overall experience.",
+        "Common Inquiries": "Customer satisfaction, product quality, and service standards"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Loyalty Program",
+        "Call Type Description": "A sales representative calls to inform customers about the loyalty program, offer loyalty rewards, or redeem loyalty points.",
+        "Common Inquiries": "Loyalty program membership, redemption procedures, and reward options"
+    }
+]

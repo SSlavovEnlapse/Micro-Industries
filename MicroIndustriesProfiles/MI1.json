@@ -1,0 +1,36 @@
+{
+    "micro-industry": "DIY stores",
+    "sections": {
+        "Introduction": {
+            "definition": "DIY stores are retail businesses that provide materials, tools, and equipment for customers to complete various projects and renovations.",
+            "scope": "The DIY store micro-industry is a significant sector within the broader home improvement industry, catering to a growing demand for self-sufficiency and cost-effective solutions for homeowners and professionals alike."
+        },
+        "Types of Businesses": [
+            "**Retail Stores**: Large chain stores and small local shops that sell tools, materials, and supplies for DIY projects.",
+            "**Online Retailers**: E-commerce platforms offering a wide range of DIY products and accessories.",
+            "**Wholesale Distributors**: Businesses that supply DIY stores and other industries with raw materials and finished goods."
+        ],
+        "Activities": [
+            "**Renovation Projects**: Updating kitchens, bathrooms, living spaces, and other areas to improve functionality and aesthetics.",
+            "**Home Decor**: Installing lighting fixtures, painting walls, and adding decorative elements to enhance the beauty of a home.",
+            "**Gardening and Landscaping**: Building outdoor spaces, planting flowers and trees, and creating functional outdoor areas."
+        ],
+        "Top Brands": {
+            "Americas": [
+                "The Home Depot",
+                "Lowe's",
+                "Menards"
+            ],
+            "EMEA": [
+                "Wickes",
+                "Kingfisher",
+                "Morrison's"
+            ],
+            "Asia-Pacific": [
+                "Bunnings Warehouse",
+                "Harvey Norman",
+                "Mitre 10"
+            ]
+        }
+    }
+}

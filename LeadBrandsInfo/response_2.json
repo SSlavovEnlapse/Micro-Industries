@@ -1,0 +1,121 @@
+{
+    "market_leader_branches": [
+        {
+            "company_name": "Nike",
+            "dominating_countries": [
+                "United States",
+                "Canada",
+                "Mexico"
+            ],
+            "annual_earnings": "$32.3 billion",
+            "total_customers": 1421000000,
+            "ceo": {
+                "name": "John Donahoe"
+            }
+        },
+        {
+            "company_name": "Adidas",
+            "dominating_countries": [
+                "Germany",
+                "France",
+                "Italy"
+            ],
+            "annual_earnings": "$24.9 billion",
+            "total_customers": 1105000000,
+            "ceo": {
+                "name": "Kasper Rorsted"
+            }
+        },
+        {
+            "company_name": "Converse",
+            "dominating_countries": [
+                "United States",
+                "France",
+                "Italy"
+            ],
+            "annual_earnings": "$2.4 billion",
+            "total_customers": 450000000,
+            "ceo": {
+                "name": "Jim Calhoun"
+            }
+        },
+        {
+            "company_name": "Vans",
+            "dominating_countries": [
+                "United States",
+                "Japan",
+                "United Kingdom"
+            ],
+            "annual_earnings": "$3.2 billion",
+            "total_customers": 350000000,
+            "ceo": {
+                "name": "Steve Rendle"
+            }
+        },
+        {
+            "company_name": "Reebok",
+            "dominating_countries": [
+                "United States",
+                "Germany",
+                "France"
+            ],
+            "annual_earnings": "$2.7 billion",
+            "total_customers": 400000000,
+            "ceo": {
+                "name": "Matthew O'Toole"
+            }
+        },
+        {
+            "company_name": "Dr. Martens",
+            "dominating_countries": [
+                "United Kingdom",
+                "Germany",
+                "France"
+            ],
+            "annual_earnings": "$1.3 billion",
+            "total_customers": 300000000,
+            "ceo": {
+                "name": "Steve Murray"
+            }
+        },
+        {
+            "company_name": "New Balance",
+            "dominating_countries": [
+                "United States",
+                "Japan",
+                "Canada"
+            ],
+            "annual_earnings": "$4.3 billion",
+            "total_customers": 500000000,
+            "ceo": {
+                "name": "James Janna"
+            }
+        },
+        {
+            "company_name": "ASICS",
+            "dominating_countries": [
+                "Japan",
+                "United States",
+                "United Kingdom"
+            ],
+            "annual_earnings": "$3.5 billion",
+            "total_customers": 400000000,
+            "ceo": {
+                "name": "Masatoshi Ito"
+            }
+        },
+        {
+            "company_name": "Onitsuka Tiger",
+            "dominating_countries": [
+                "Japan",
+                "United States",
+                "France"
+            ],
+            "annual_earnings": "$1.2 billion",
+            "total_customers": 300000000,
+            "ceo": {
+                "name": "Koji Yano"
+            }
+        }
+    ]
+}

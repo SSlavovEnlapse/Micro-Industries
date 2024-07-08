@@ -1,0 +1,62 @@
+[
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Product Information Inquiry",
+        "Call Type Description": "Customers calling to inquire about products, including their descriptions, prices, and availability, as well as substituting items for similar products",
+        "Common Inquiries": "Opening Hours, Product Options, Pricing, Availability, Similar Products"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Order Tracking and Status",
+        "Call Type Description": "Customers calling to track the status of their orders, including delivery dates and any potential issues or delays",
+        "Common Inquiries": "Order Status, Delivery Date, Tracking Number, Return Policy"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Billing and Payment Inquiries",
+        "Call Type Description": "Customers calling to clarify or dispute billing issues, or to make payments or set up payment plans",
+        "Common Inquiries": "Billing Details, Payment Options, Payment Due Dates, Discounts and Promotions"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Returns and Refunds",
+        "Call Type Description": "Customers calling to initiate returns, refunds, or exchanges, or to process a missing or damaged item",
+        "Common Inquiries": "Return Policy, Refund Options, Exchange Policy, Damaged or Missing Items"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Product Recommendations",
+        "Call Type Description": "Customers calling for product recommendations based on their specific needs or projects",
+        "Common Inquiries": "Product Suggestion, Compatibility Issues, Replacement Parts, DIY Project Advice"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Promotional Offers and Sales",
+        "Call Type Description": "Sales representatives calling to promote special offers, discounts, and sales to drive sales and increase customer engagement",
+        "Common Inquiries": "Promotional Offers, Discounts, Sales, Bundle Deals, Loyalty Program"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Product Training and Education",
+        "Call Type Description": "Sales representatives calling to educate customers on product usage, features, and benefits, as well as providing instructional guidance",
+        "Common Inquiries": "Product Demonstrations, Usage Guides, Maintenance Tips, Software Updates, Technical Support"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Loyalty Program Updates",
+        "Call Type Description": "Customer service representatives calling to inform customers about loyalty program changes, updates, or promotions",
+        "Common Inquiries": "Loyalty Program Terms, Reward Points, Expiration Dates, New Offers"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Customer Feedback and Voice of the Customer",
+        "Call Type Description": "Customer service representatives calling to gather feedback on customer experiences, concerns, and suggestions for improving products and services",
+        "Common Inquiries": "Customer Satisfaction, Product Opinions, Service Feedback, New Features, Quality of Products"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Event and Workshop Promotions",
+        "Call Type Description": "Sales representatives calling to promote workshops, training sessions, or special events, such as seminars or webinars",
+        "Common Inquiries": "Event Schedules, Workshops, Training Sessions, Webinars, Product Demonstrations"
+    }
+]
