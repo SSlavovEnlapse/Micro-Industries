@@ -112,17 +112,9 @@ def validate_and_clean_json(json_str):
                 return json.loads(json_str)
             except json.JSONDecodeError:
                 # Attempt to clean the JSON string
-                cleaned_json_str = json_str[json_str.find("{"):json_str.rfind("}")+1]
+                cleaned_json_str = json_str[json_str.find("["):json_str.rfind("]")+1]
                 return json.loads(cleaned_json_str)
 
-# Predefined JSON schema to pass the prompt
-json_schema = {
-    "Index": "",
-    "Section": "",
-    "Question": "",
-    "Scoring": "",
-    "Scoring Criteria": ""
-}
 
 # Function to find the current call list
 def find_current_call_list(idx):
@@ -151,92 +143,249 @@ for idx, microIndustry in enumerate(micIndustry_array, start=0):
                     "role": "system",
                     "content": system_prompt
         },
-        {
-            "role": "user",
-            "content": f"""Act as an expert contact center call scoring coach with great experience in the subject. 
+        {      
+                    "role": "user",
+                    "content": f"""Act as an expert contact center call scoring coach with great experience in the subject.
 
-            I'll give you a generic Contact Center Call Scoring Template as a reference. 
+  I'll give you a generic Contact Center Call Scoring Template as a reference.
 
-            Your task is to generate a new Contact Center Call Scoring Template for a specific micro-industry, adhering to the rules and guidelines below. 
+  Your task is to generate a new Contact Center Call Scoring Template for a specific micro-industry, adhering to the rules and guidelines below.
 
-            Make sure you cover all sections and questions from the example given below in your output. Do not skip a question unless absolutely necessary to do so. 
+  Make sure you cover all sections and questions from the example given below in your output. Do not skip a question unless absolutely necessary to do so.
 
-            The micro-industry is: {microIndustry}
+  The micro-industry is: {microIndustry}
 
-            The micro-industry profile is:
-            {introduction_list[idx]}
+  The micro-industry profile is:
+  {introduction_list[idx]}
 
-            Activities
-            {activities_list[idx]}
+  Activities
+  {activities_list[idx]}
 
-            Types of Businesses
-            {businesses_list[idx]}
+  Types of Businesses
+  {businesses_list[idx]}
 
+  Contact Center Call Type Info
+  {current_call_list[random_call_index]}
 
-            Contact Center Call Type Info
-            {current_call_list[random_call_index]}
+  The Contact Center Call Scoring template should have the following sections:
+  - Greeting 
+  - Customer Identification 
+  - Needs Identification 
+  - Solution Proposal 
+  - Value Add / Upsell 
+  - Closing 
+  - Rapport
 
+  The output format should be a JSON object with the following structure:
+  {{
+        "Index": "number",
+        "Section": "section name",
+        "Question": "question text",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** detailed criteria **No:** detailed criteria"    
+    }}
 
-            The Contact Center Call Scoring template should have the following sections:
-            - Greeting 
-            - Customer Identification 
-            - Needs Identification 
-            - Solution Proposal 
-            - Value Add / Upsell 
-            - Closing 
-            - Rapport
+  Your response must include all the sections and questions in the same size as the 'Contact Center Call Scoring Template' provided below.Please ensure the response is exactly the same length and structure as the example provided below. Also your response should not include information that is not in JSON format. Here is the template for reference:
 
-            The output format should be a table with the following columns: 
-            - Index (example: 1, 2, 3, ...) 
-            - Section 
-            - Question 
-            - Scoring 
-            - Scoring Criteria (write the criteria for each scoring option on a new line and be as detailed as possible)
-
-            Your response must look like the 'Contact Center Call Scoring Template' I will provide to you. That means your response must be the same size (26 rows).Make sure you align the '|' as much as you can.
-            The Contact Center Call Scoring Template to use as a general reference follows in a markdown table format:
-
-            | Index | Section                 | Question                                                                                       | Scoring  | Scoring Criteria                                                                                  |
-            |-------|-------------------------|------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------|
-            | 1     | Greeting                | Did the agent greet the customer promptly and courteously?                                     | Yes / No | **Yes:** Agent greeted the customer within 5 seconds of connection, using phrases like "Good morning/afternoon/evening" in a friendly and upbeat tone. **No:** Agent took longer than 5 seconds to greet or used a monotone/apathetic tone. |
-            | 2     | Greeting                | Did the agent introduce themselves and the company they represent?                             | Yes / No | **Yes:** Agent clearly stated their full name and the company's name within the first 10 seconds of the call, e.g., "Hello, this is [Agent's Name] from [Company Name]." **No:** Agent failed to provide their name or the company's name, or mumbled it so it was unclear. |
-            | 3     | Greeting                | Did the agent thank the customer for contacting the company?                                   | Yes / No | **Yes:** Agent explicitly thanked the customer by saying something like "Thank you for calling [Company Name]." **No:** Agent did not express any form of gratitude. |
-            | 4     | Customer Identification | Did the agent verify the customer's identity as appropriate?                                   | Yes / No / N/A | **Yes:** Agent followed security protocols by asking for 2-3 pieces of verification information (e.g., account number, date of birth) and confirmed them against company records. **No:** Agent skipped verification or did it improperly, risking a security breach. **N/A:** Verification not required for the nature of the call. |
-            | 5     | Customer Identification | Did the agent confirm the customer's contact details and information?                          | Yes / No | **Yes:** Agent repeated back key information such as phone number, email, or address for confirmation and asked the customer to verify its accuracy. **No:** Agent did not confirm or repeated information incorrectly. |
-            | 6     | Customer Identification | Did the agent ensure the customer's account information was up to date?                       | Yes / No | **Yes:** Agent asked if there were any updates to contact or account information and made necessary changes in the system. **No:** Agent did not inquire about or update any account information. |
-            | 7     | Needs Identification    | Did the agent listen actively to the customer's issue without interrupting?                    | Yes / No | **Yes:** Agent allowed the customer to fully explain their issue without interruption, used verbal nods ("I understand," "Right," "Please go on") to show attentiveness. **No:** Agent interrupted the customer multiple times or appeared to be distracted. |
-            | 8     | Needs Identification    | Did the agent ask relevant clarifying questions to understand the issue better?                | Yes / No | **Yes:** Agent asked specific, open-ended questions related to the issue ("Can you tell me more about...?"). **No:** Agent asked irrelevant or no clarifying questions, leading to misunderstandings. |
-            | 9     | Needs Identification    | Did the agent summarize the customer's issue to confirm understanding?                        | Yes / No | **Yes:** Agent recapped the main points of the customer's issue accurately before proceeding, saying something like, "So, to confirm, you're having an issue with...". **No:** Agent did not summarize or summarized incorrectly, causing confusion. |
-            | 10    | Solution Proposal       | Did the agent demonstrate knowledge of the product/service?                                    | Yes / No | **Yes:** Agent provided detailed and accurate information about the product/service, including relevant features and functionality. **No:** Agent gave incorrect information, was unsure, or had to repeatedly consult a knowledge base. |
-            | 11    | Solution Proposal       | Did the agent provide an accurate and appropriate solution to the issue?                       | Yes / No | **Yes:** Agent offered a solution that directly addressed the customer's issue and explained why it would work. **No:** Agent suggested irrelevant solutions or failed to provide a solution altogether. |
-            | 12    | Solution Proposal       | Did the agent explain the solution clearly and comprehensively?                                | Yes / No | **Yes:** Agent used direct and simple language to explain the solution step-by-step, ensuring the customer understood. **No:** Agent used technical jargon, spoke too quickly, or did not explain the solution fully. |
-            | 13    | Solution Proposal       | Did the agent discuss any potential risks or downsides of the proposed solution?               | Yes / No / N/A | **Yes:** Agent clearly outlined any potential risks, side effects, or limitations of the solution, and suggested precautions if applicable. **No:** Agent failed to mention significant risks or limitations. **N/A:** No potential risks or downsides associated with the solution. |
-            | 14    | Value Add / Upsell      | Did the agent offer any additional products or services that could benefit the customer?        | Yes / No / N/A | **Yes:** Agent identified and suggested relevant additional products or services tailored to the customer's needs without being pushy. **No:** Agent missed an opportunity for a relevant upsell. **N/A:** Upsell not applicable in the context of the call. |
-            | 15    | Value Add / Upsell      | Did the agent explain the benefits of the additional products or services?                      | Yes / No / N/A | **Yes:** Agent clearly outlined how the additional product/service would benefit the customer, using specific examples or scenarios. **No:** Agent did not explain the benefits or did so inadequately. **N/A:** Upsell not applicable. |
-            | 16    | Value Add / Upsell      | Did the agent handle any objections to the upsell professionally and effectively?               | Yes / No / N/A | **Yes:** Agent acknowledged the customer's objections, addressed concerns calmly, and provided additional information to alleviate doubts. **No:** Agent dismissed objections or responded defensively. **N/A:** No objections raised or upsell not applicable. |
-            | 17    | Closing                 | Did the agent confirm the resolution or next steps with the customer?                          | Yes / No | **Yes:** Agent summarized what was done or what will happen next, including timeframes if applicable, and confirmed the customer’s understanding. **No:** Agent did not confirm the resolution or next steps. |
-            | 18    | Closing                 | Did the agent offer any additional assistance before ending the call?                          | Yes / No | **Yes:** Agent asked an open-ended question such as, "Is there anything else I can help you with today?" **No:** Agent did not inquire if further assistance was needed. |
-            | 19    | Closing                 | Did the agent close the call courteously?                                                      | Yes / No | **Yes:** Agent used a polite closing statement like, "Thank you for calling, and have a great day!" **No:** Agent ended the call abruptly or without a courteous closing. |
-            | 20    | Closing                 | Did the agent ensure the customer was satisfied with the resolution before ending the call?   | Yes / No | **Yes:** Agent explicitly asked if the customer was satisfied with the resolution and if they had any more concerns. **No:** Agent did not check the customer's satisfaction level before ending the call. |
-            | 21    | Rapport                 | Did the agent show empathy and understanding of the customer's concerns?                       | Yes / No | **Yes:** Agent used empathetic statements like, "I understand how frustrating this must be for you," and validated the customer’s feelings. **No:** Agent did not acknowledge the customer's emotions or came across as indifferent. |
-            | 22    | Rapport                 | Did the agent personalize the interaction (e.g., using the customer's name)?                   | Yes / No | **Yes:** Agent used the customer's name multiple times during the call and referenced specific details relevant to the customer’s situation. **No:** Agent did not use the customer's name or personalize the conversation. |
-            | 23    | Rapport                 | Did the agent maintain a courteous and professional tone throughout the call?                  | Yes / No | **Yes:** Agent consistently used polite language, maintained a professional demeanor, and showed respect throughout the call. **No:** Agent used informal, slang, or rude language, or was condescending. |
-            | 24    | Rapport                 | Did the agent use clear and understandable language?                                           | Yes / No | **Yes:** Agent used simple, jargon-free language that was easy for the customer to understand. **No:** Agent used technical terms without explanation or spoke too quickly. |
-            | 25    | Rapport                 | Did the agent handle any difficult situations or objections calmly and effectively?            | Yes / No | **Yes:** Agent stayed calm, listened actively, acknowledged the customer's frustration, and provided clear, constructive responses. **No:** Agent became defensive, raised their voice, or failed to manage the situation effectively. |
-            | 26    | Rapport                 | Did the agent make the customer feel valued and appreciated?                                   | Yes / No | **Yes:** Agent made positive affirmations, thanked the customer for their business, and made feel their issue was important. **No:** Agent did not make any effort to make the customer feel valued or appreciated. |"""
+  [
+    {{
+        "Index": "1",
+        "Section": "Greeting",
+        "Question": "Did the agent greet the customer promptly and courteously?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent greeted the customer within 5 seconds of connection, using phrases like 'Good morning/afternoon/evening' in a friendly and upbeat tone. **No:** Agent took longer than 5 seconds to greet or used a monotone/apathetic tone."
+    }},
+    {{
+        "Index": "2",
+        "Section": "Greeting",
+        "Question": "Did the agent introduce themselves and the company they represent?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent clearly stated their full name and the company's name within the first 10 seconds of the call, e.g., 'Hello, this is [Agent's Name] from [Company Name].' **No:** Agent failed to provide their name or the company's name, or mumbled it so it was unclear."
+    }},
+    {{
+        "Index": "3",
+        "Section": "Greeting",
+        "Question": "Did the agent thank the customer for contacting the company?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent explicitly thanked the customer by saying something like 'Thank you for calling [Company Name].' **No:** Agent did not express any form of gratitude."
+    }},
+    {{
+        "Index": "4",
+        "Section": "Customer Identification",
+        "Question": "Did the agent verify the customer's identity as appropriate?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent followed security protocols by asking for 2-3 pieces of verification information (e.g., account number, date of birth) and confirmed them against company records. **No:** Agent skipped verification or did it improperly, risking a security breach. **N/A:** Verification not required for the nature of the call."
+    }},
+    {{
+        "Index": "5",
+        "Section": "Customer Identification",
+        "Question": "Did the agent confirm the customer's contact details and information?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent repeated back key information such as phone number, email, or address for confirmation and asked the customer to verify its accuracy. **No:** Agent did not confirm or repeated information incorrectly."
+    }},
+    {{
+        "Index": "6",
+        "Section": "Customer Identification",
+        "Question": "Did the agent ensure the customer's account information was up to date?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent asked if there were any updates to contact or account information and made necessary changes in the system. **No:** Agent did not inquire about or update any account information."
+    }},
+    {{
+        "Index": "7",
+        "Section": "Needs Identification",
+        "Question": "Did the agent listen actively to the customer's issue without interrupting?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent allowed the customer to fully explain their issue without interruption, used verbal nods ('I understand,' 'Right,' 'Please go on') to show attentiveness. **No:** Agent interrupted the customer multiple times or appeared to be distracted."
+    }},
+    {{
+        "Index": "8",
+        "Section": "Needs Identification",
+        "Question": "Did the agent ask relevant clarifying questions to understand the issue better?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent asked specific, open-ended questions related to the issue ('Can you tell me more about...?'). **No:** Agent asked irrelevant or no clarifying questions, leading to misunderstandings."
+    }},
+    {{
+        "Index": "9",
+        "Section": "Needs Identification",
+        "Question": "Did the agent summarize the customer's issue to confirm understanding?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent recapped the main points of the customer's issue accurately before proceeding, saying something like, 'So, to confirm, you're having an issue with...'. **No:** Agent did not summarize or summarized incorrectly, causing confusion."
+    }},
+    {{
+        "Index": "10",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent demonstrate knowledge of the product/service?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent provided detailed and accurate information about the product/service, including relevant features and functionality. **No:** Agent gave incorrect information, was unsure, or had to repeatedly consult a knowledge base."
+    }},
+    {{
+        "Index": "11",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent provide an accurate and appropriate solution to the issue?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent offered a solution that directly addressed the customer's issue and explained why it would work. **No:** Agent suggested irrelevant solutions or failed to provide a solution altogether."
+    }},
+    {{
+        "Index": "12",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent explain the solution clearly and comprehensively?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used direct and simple language to explain the solution step-by-step, ensuring the customer understood. **No:** Agent used technical jargon, spoke too quickly, or did not explain the solution fully."
+    }},
+    {{
+        "Index": "13",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent discuss any potential risks or downsides of the proposed solution?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent clearly outlined any potential risks, side effects, or limitations of the solution, and suggested precautions if applicable. **No:** Agent failed to mention significant risks or limitations. **N/A:** No potential risks or downsides associated with the solution."
+    }},
+    {{
+        "Index": "14",
+        "Section": "Value Add / Upsell",
+        "Question": "Did the agent offer any additional products or services that could benefit the customer?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent identified and suggested relevant additional products or services tailored to the customer's needs without being pushy. **No:** Agent missed an opportunity for a relevant upsell. **N/A:** Upsell not applicable in the context of the call."
+    }},
+    {{
+        "Index": "15",
+        "Section": "Value Add / Upsell",
+        "Question": "Did the agent explain the benefits of the additional products or services?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent clearly outlined how the additional product/service would benefit the customer, using specific examples or scenarios. **No:** Agent did not explain the benefits or did so inadequately. **N/A:** Upsell not applicable."
+    }},
+    {{
+        "Index": "16",
+        "Section": "Value Add / Upsell",
+        "Question": "Did the agent handle any objections to the upsell professionally and effectively?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent acknowledged the customer's objections, addressed concerns calmly, and provided additional information to alleviate doubts. **No:** Agent dismissed objections or responded defensively. **N/A:** No objections raised or upsell not applicable."
+    }},
+    {{
+        "Index": "17",
+        "Section": "Closing",
+        "Question": "Did the agent confirm the resolution or next steps with the customer?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent summarized what was done or what will happen next, including timeframes if applicable, and confirmed the customer’s understanding. **No:** Agent did not confirm the resolution or next steps."
+    }},
+    {{
+        "Index": "18",
+        "Section": "Closing",
+        "Question": "Did the agent offer any additional assistance before ending the call?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent asked an open-ended question such as, 'Is there anything else I can help you with today?' **No:** Agent did not inquire if further assistance was needed."
+    }},
+    {{
+        "Index": "19",
+        "Section": "Closing",
+        "Question": "Did the agent close the call courteously?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used a polite closing statement like, 'Thank you for calling, and have a great day!' **No:** Agent ended the call abruptly or without a courteous closing."
+    }},
+    {{
+        "Index": "20",
+        "Section": "Closing",
+        "Question": "Did the agent ensure the customer was satisfied with the resolution before ending the call?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent explicitly asked if the customer was satisfied with the resolution and if they had any more concerns. **No:** Agent did not check the customer's satisfaction level before ending the call."
+    }},
+    {{
+        "Index": "21",
+        "Section": "Rapport",
+        "Question": "Did the agent show empathy and understanding of the customer's concerns?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used empathetic statements like, 'I understand how frustrating this must be for you,' and validated the customer’s feelings. **No:** Agent did not acknowledge the customer's emotions or came across as indifferent."
+    }},
+    {{
+        "Index": "22",
+        "Section": "Rapport",
+        "Question": "Did the agent personalize the interaction (e.g., using the customer's name)?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used the customer's name multiple times during the call and referenced specific details relevant to the customer’s situation. **No:** Agent did not use the customer's name or personalize the conversation."
+    }},
+    {{
+        "Index": "23",
+        "Section": "Rapport",
+        "Question": "Did the agent maintain a courteous and professional tone throughout the call?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent consistently used polite language, maintained a professional demeanor, and showed respect throughout the call. **No:** Agent used informal, slang, or rude language, or was condescending."
+    }},
+    {{
+        "Index": "24",
+        "Section": "Rapport",
+        "Question": "Did the agent use clear and understandable language?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used simple, jargon-free language that was easy for the customer to understand. **No:** Agent used technical terms without explanation or spoke too quickly."
+    }},
+    {{
+        "Index": "25",
+        "Section": "Rapport",
+        "Question": "Did the agent handle any difficult situations or objections calmly and effectively?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent stayed calm, listened actively, acknowledged the customer's frustration, and provided clear, constructive responses. **No:** Agent became defensive, raised their voice, or failed to manage the situation effectively."
+    }},
+    {{
+        "Index": "26",
+        "Section": "Rapport",
+        "Question": "Did the agent make the customer feel valued and appreciated?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent made positive affirmations, thanked the customer for their business, and made them feel their issue was important. **No:** Agent did not make any effort to make the customer feel valued or appreciated."
+    }}
+]
+"""
         }
         ],
         temperature=1   
         )
-        
+        print('ok')
         # Retrieving the response from chat completion and cleaning the JSON
-        '''json_output = completion.choices[0].message.content.strip()
+        json_output = completion.choices[0].message.content.strip()
         cleaned_json_output = validate_and_clean_json(json_output)
-        print(json.dumps(cleaned_json_output, indent=4))'''
-        text_output_path = os.path.join(output_dir, "text.txt")
-        with open(text_output_path, "a") as text_file:
-            text_file.write(f"Micro-industry {idx+1}:\n")
-            text_file.write(completion.choices[0].message.content + "\n\n")
-            print(f"Output for micro-industry {idx+1} saved to text.txt")
+        # Define the filepath using the loop index
+        filename = f'scoringTemplate{idx+1}.json'
+        json_output_path = os.path.join(output_dir, filename)
+        # Write the cleaned JSON output to the file
+        with open(json_output_path, 'w') as file:
+            json.dump(cleaned_json_output, file, indent=4)
+
     except Exception as e:
-        print("error")
+        print(f"error: {e}")
