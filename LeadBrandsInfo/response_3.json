@@ -1,137 +1,102 @@
 {
     "market_leader_branches": [
         {
+            "company_name": "Barnes & Noble",
+            "dominating_countries": [
+                "USA"
+            ],
+            "annual_earnings": "Multiple Millions",
+            "total_customers": "Millions",
+            "ceo": {
+                "name": "James F. Smith"
+            }
+        },
+        {
+            "company_name": "IndieBound",
+            "dominating_countries": [
+                "USA"
+            ],
+            "annual_earnings": "Not Disclosed",
+            "total_customers": "Thousands",
+            "ceo": {
+                "name": "Not Disclosed"
+            }
+        },
+        {
             "company_name": "Amazon",
             "dominating_countries": [
-                "United States",
-                "Canada"
+                "Global"
             ],
-            "annual_earnings": "$280 billion",
-            "total_customers": "300 million",
+            "annual_earnings": "Multiple Billions",
+            "total_customers": "Hundreds of Millions",
             "ceo": {
                 "name": "Jeff Bezos"
             }
         },
         {
-            "company_name": "Barnes & Noble",
+            "company_name": "Waterstones",
             "dominating_countries": [
-                "United States"
+                "UK"
             ],
-            "annual_earnings": "$3.6 billion",
-            "total_customers": "45 million",
+            "annual_earnings": "£100M",
+            "total_customers": "Millions",
             "ceo": {
-                "name": "Jim Smith"
+                "name": "Stephen Weatherill"
             }
         },
         {
-            "company_name": "Indiebound",
+            "company_name": "Blackwell's",
             "dominating_countries": [
-                "United States"
+                "UK"
             ],
-            "annual_earnings": "$100 million",
-            "total_customers": "5 million",
+            "annual_earnings": "£50M",
+            "total_customers": "Tens of Thousands",
             "ceo": {
-                "name": "Tina Jordan"
-            }
-        },
-        {
-            "company_name": "Libro.fm",
-            "dominating_countries": [
-                "United States"
-            ],
-            "annual_earnings": "$20 million",
-            "total_customers": "1 million",
-            "ceo": {
-                "name": "Vincent Petrini"
+                "name": "Not Disclosed"
             }
         },
         {
             "company_name": "Foyles",
             "dominating_countries": [
-                "United Kingdom"
+                "UK"
             ],
-            "annual_earnings": "$100 million",
-            "total_customers": "2 million",
+            "annual_earnings": "£30M",
+            "total_customers": "Tens of Thousands",
             "ceo": {
-                "name": "Paul Riley"
-            }
-        },
-        {
-            "company_name": "Waterstones",
-            "dominating_countries": [
-                "United Kingdom"
-            ],
-            "annual_earnings": "$500 million",
-            "total_customers": "10 million",
-            "ceo": {
-                "name": "James Hilleson"
-            }
-        },
-        {
-            "company_name": "WHSmith",
-            "dominating_countries": [
-                "United Kingdom"
-            ],
-            "annual_earnings": "$1 billion",
-            "total_customers": "20 million",
-            "ceo": {
-                "name": "Stephen Clarke"
-            }
-        },
-        {
-            "company_name": "Book Depository",
-            "dominating_countries": [
-                "United Kingdom"
-            ],
-            "annual_earnings": "$200 million",
-            "total_customers": "5 million",
-            "ceo": {
-                "name": "Adam Freudenheim"
+                "name": "Not Disclosed"
             }
         },
         {
             "company_name": "Kinokuniya",
             "dominating_countries": [
-                "Japan",
-                "China"
+                "Japan"
             ],
-            "annual_earnings": "$500 million",
-            "total_customers": "10 million",
+            "annual_earnings": "¥50B",
+            "total_customers": "Millions",
             "ceo": {
-                "name": "Toshiya Mitsuzuka"
+                "name": "Not Disclosed"
             }
         },
         {
-            "company_name": "Japan Books",
+            "company_name": "Daiso",
             "dominating_countries": [
                 "Japan"
             ],
-            "annual_earnings": "$100 million",
-            "total_customers": "2 million",
+            "annual_earnings": "¥100B",
+            "total_customers": "Millions",
             "ceo": {
-                "name": "Takeshi Kato"
+                "name": "Not Disclosed"
             }
         },
         {
-            "company_name": "D-Books",
+            "company_name": "Tokyo Bookstore",
             "dominating_countries": [
-                "Taiwan"
+                "Japan"
             ],
-            "annual_earnings": "$20 million",
-            "total_customers": "1 million",
+            "annual_earnings": "¥50M",
+            "total_customers": "Tens of Thousands",
             "ceo": {
-                "name": "Kelvin Ng"
-            }
-        },
-        {
-            "company_name": "Mustafa Mansur Bookshop",
-            "dominating_countries": [
-                "Malaysia"
-            ],
-            "annual_earnings": "$5 million",
-            "total_customers": "500,000",
-            "ceo": {
-                "name": "Mustafa Mansur"
+                "name": "Not Disclosed"
             }
         }
     ]

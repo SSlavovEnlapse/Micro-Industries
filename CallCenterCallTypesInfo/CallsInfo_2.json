@@ -1,62 +1,62 @@
 [
     {
         "Call Direction": "inbound",
-        "Call Type": "Product Inquiry",
-        "Call Type Description": "A customer calls to inquire about the availability of a specific shoe product, request product information, or compare features and pricing across different products.",
-        "Common Inquiries": "Product features, pricing, availability, sizing, color options, and style"
+        "Call Type": "Order Tracking",
+        "Call Type Description": "Customers calling to inquire about the status of their online orders, including shipping timelines, delivery dates, and order cancellations.",
+        "Common Inquiries": "Order status, shipping details, delivery times, cancellation requests"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Order Tracing",
-        "Call Type Description": "A customer calls to track the status of their order, query about delivery dates, or receive clarification on order-related queries.",
-        "Common Inquiries": "Order status, tracking number, delivery dates, payment options, and return policy"
+        "Call Type": "Product Information",
+        "Call Type Description": "Customers seeking information about specific products, such as features, sizes, colors, pricing, and availability.",
+        "Common Inquiries": "Product features, sizes, colors, pricing, availability, product comparisons"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Return/Exchange",
-        "Call Type Description": "A customer calls to initiate a return or exchange of a purchased shoe product, citing issues with sizing, fit, or quality.",
-        "Common Inquiries": "Return and exchange procedures, product acceptance, restocking fees, and refund policies"
+        "Call Type": "Return and Exchange",
+        "Call Type Description": "Customers calling to initiate returns, exchanges, or refunds for purchased products, including questions about store policies and procedures.",
+        "Common Inquiries": "Return policy, exchange process, refund timelines, store credit"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Price Comparison",
-        "Call Type Description": "A customer calls to compare prices of a specific shoe product across different stores, both online and offline.",
-        "Common Inquiries": "Price comparison, product features, availability, and promotions"
+        "Call Type": "Account and Payment",
+        "Call Type Description": "Customers calling to inquire about their account information, including login issues, payment methods, and billing inquiries.",
+        "Common Inquiries": "Account login, payment options, billing questions, payment status"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Cancellation",
-        "Call Type Description": "A customer calls to cancel an existing order, amend their purchase, or change their order details.",
-        "Common Inquiries": "Cancellation policies, order changes, and refund procedures"
+        "Call Type": "Warranty and Repair",
+        "Call Type Description": "Customers calling to inquire about warranty information, repair options, and maintenance services for their purchased products.",
+        "Common Inquiries": "Warranty details, repair options, maintenance services, product recalls"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Promotional Offer",
-        "Call Type Description": "A sales representative calls to inform customers about new shoe products, promotions, discounts, or special offers.",
-        "Common Inquiries": "Promotions, discounts, product launches, and special offers"
+        "Call Type": "Welcome and Onboarding",
+        "Call Type Description": "Outbound calls to welcome new customers, introduce them to products and services, and provide onboarding guidance.",
+        "Common Inquiries": "Product benefits, service features, account setup, loyalty programs"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Upselling",
-        "Call Type Description": "A sales representative calls to upsell customers on complementary shoe products, accessories, or services.",
-        "Common Inquiries": "Complementary products, accessories, and services"
+        "Call Type": "Special Offers and Promotions",
+        "Call Type Description": "Outbound calls to inform customers about limited-time offers, discounts, and special promotions.",
+        "Common Inquiries": "Offer details, promotion eligibility, discount codes, loyalty rewards"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Customer Feedback",
-        "Call Type Description": "A sales representative calls to gather customer feedback on their most recent shoe purchase or interaction with the store.",
-        "Common Inquiries": "Customer satisfaction, product quality, and service standards"
+        "Call Type": "Customer Feedback and Survey",
+        "Call Type Description": "Outbound calls to collect customer feedback, conduct surveys, and gather insights to improve products and services.",
+        "Common Inquiries": "Survey questions, feedback collection, product improvement suggestions"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Survey",
-        "Call Type Description": "A sales representative calls to conduct a survey to gather customer feedback on the store's products, services, and overall experience.",
-        "Common Inquiries": "Customer satisfaction, product quality, and service standards"
+        "Call Type": "Abandoned Cart Follow-up",
+        "Call Type Description": "Outbound calls to follow up with customers who have abandoned their online shopping carts, to help complete their purchases.",
+        "Common Inquiries": "Cart contents, purchase completion, product availability, special offers"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Loyalty Program",
-        "Call Type Description": "A sales representative calls to inform customers about the loyalty program, offer loyalty rewards, or redeem loyalty points.",
-        "Common Inquiries": "Loyalty program membership, redemption procedures, and reward options"
+        "Call Type": "Loyalty Program Updates",
+        "Call Type Description": "Outbound calls to inform customers about loyalty program updates, rewards, and benefits.",
+        "Common Inquiries": "Program updates, reward balances, benefit explanations, loyalty tier status"
     }
 ]

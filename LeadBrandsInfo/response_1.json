@@ -1,15 +1,15 @@
 {
     "market_leader_branches": [
         {
-            "company_name": "The Home Depot",
+            "company_name": "Home Depot",
             "dominating_countries": [
                 "United States",
                 "Canada"
             ],
-            "annual_earnings": "USD 125.6 billion (2020)",
-            "total_customers": "625 million",
+            "annual_earnings": "$114.72 billion",
+            "total_customers": "243 million",
             "ceo": {
-                "name": "Craig Menear"
+                "name": "Ted Decker"
             }
         },
         {
@@ -18,10 +18,10 @@
                 "United States",
                 "Canada"
             ],
-            "annual_earnings": "USD 72.1 billion (2020)",
-            "total_customers": "500 million",
+            "annual_earnings": "$72.09 billion",
+            "total_customers": "200 million",
             "ceo": {
-                "name": "Marvin R. Ellison"
+                "name": "Marvin Ellison"
             }
         },
         {
@@ -29,8 +29,8 @@
             "dominating_countries": [
                 "United States"
             ],
-            "annual_earnings": "USD 10.1 billion (2020)",
-            "total_customers": "100 million",
+            "annual_earnings": "$10.75 billion",
+            "total_customers": "30 million",
             "ceo": {
                 "name": "John Menard Jr."
             }
@@ -41,69 +41,69 @@
                 "United Kingdom",
                 "Ireland"
             ],
-            "annual_earnings": "GBP 1.8 billion (2020)",
-            "total_customers": "50 million",
+            "annual_earnings": "£1.13 billion",
+            "total_customers": "9 million",
             "ceo": {
-                "name": "David Wood"
+                "name": "Andy Harrison"
             }
         },
         {
-            "company_name": "Kingfisher",
+            "company_name": "B&Q",
             "dominating_countries": [
                 "United Kingdom",
-                "France"
+                "Ireland"
             ],
-            "annual_earnings": "GBP 12.9 billion (2020)",
-            "total_customers": "100 million",
+            "annual_earnings": "£8.13 billion",
+            "total_customers": "20 million",
             "ceo": {
-                "name": "Thierry Garnier"
+                "name": "Ken Toombs"
             }
         },
         {
-            "company_name": "Morrison's",
+            "company_name": "IKEA",
             "dominating_countries": [
-                "United Kingdom"
+                "Europe",
+                "Asia",
+                "Americas"
             ],
-            "annual_earnings": "GBP 5.1 billion (2020)",
-            "total_customers": "20 million",
+            "annual_earnings": "€43.71 billion",
+            "total_customers": "100 million",
             "ceo": {
-                "name": "David Potts"
+                "name": "Jesper Brodin"
+            }
+        },
+        {
+            "company_name": "Woolworths",
+            "dominating_countries": [
+                "Australia",
+                "New Zealand"
+            ],
+            "annual_earnings": "AUD 27.45 billion",
+            "total_customers": "15 million",
+            "ceo": {
+                "name": "Brad Banducci"
             }
         },
         {
             "company_name": "Bunnings Warehouse",
             "dominating_countries": [
-                "Australia",
-                "New Zealand"
+                "Australia"
             ],
-            "annual_earnings": "AUD 8.4 billion (2020)",
-            "total_customers": "50 million",
+            "annual_earnings": "AUD 14.15 billion",
+            "total_customers": "5 million",
             "ceo": {
                 "name": "Mike Schneider"
             }
         },
         {
-            "company_name": "Harvey Norman",
+            "company_name": "Takahashi",
             "dominating_countries": [
-                "Australia",
-                "New Zealand"
+                "Japan"
             ],
-            "annual_earnings": "AUD 4.3 billion (2020)",
-            "total_customers": "20 million",
-            "ceo": {
-                "name": "Kate Cuthbertson"
-            }
-        },
-        {
-            "company_name": "Mitre 10",
-            "dominating_countries": [
-                "Australia",
-                "New Zealand"
-            ],
-            "annual_earnings": "AUD 1.8 billion (2020)",
+            "annual_earnings": "JP¥ 2.31 trillion",
             "total_customers": "10 million",
             "ceo": {
-                "name": "Michael Ventura"
+                "name": "Takashi Takahashi"
             }
         }
     ]

@@ -1,62 +1,62 @@
 [
     {
         "Call Direction": "inbound",
-        "Call Type": "Book Availability Inquiry",
-        "Call Type Description": "Customers calling to inquire about the availability of a specific book title, author, or genre, including new releases, bestsellers, or hard-to-find books.",
-        "Common Inquiries": "Book formats, Prices, In-store availability, Online availability, Delivery options"
+        "Call Type": "Product Inquiry",
+        "Call Type Description": "Customers calling to inquire about availability, pricing, and details of specific books or authors",
+        "Common Inquiries": "Book availability, Pricing, Author information, Book recommendations"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Book Recommendation Request",
-        "Call Type Description": "Customers seeking personalized book recommendations based on their reading preferences, genre, or authors they enjoy.",
-        "Common Inquiries": "Book genres, Author suggestions, Reading level, Age range, Top picks"
+        "Call Type": "Order Placement",
+        "Call Type Description": "Customers calling to place orders for books, including special requests and bulk orders",
+        "Common Inquiries": "Order status, Shipping options, Payment methods, Discounts and promotions"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Event and Program Inquiry",
-        "Call Type Description": "Customers calling to inquire about events, author readings, book clubs, or other programs hosted by the bookstore or library.",
-        "Common Inquiries": "Event schedules, Author appearances, Book club meetings, Program registration, Venue information"
+        "Call Type": "Store Information",
+        "Call Type Description": "Customers calling to inquire about store hours, locations, and services offered",
+        "Common Inquiries": "Store hours, Directions, In-store events, Return policy"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Book Return and Refund Policy",
-        "Call Type Description": "Customers calling to inquire about the return and refund policy for purchased books, including exchange options and store credit.",
-        "Common Inquiries": "Return window, Refund process, Exchange options, Store credit, Gift receipts"
+        "Call Type": "Gift Card Balance",
+        "Call Type Description": "Customers calling to check the balance of their gift cards or to inquire about gift card purchases",
+        "Common Inquiries": "Gift card balance, Gift card purchase, Gift card redemption"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Order Status and Tracking",
-        "Call Type Description": "Customers calling to inquire about the status of their online or in-store book order, including tracking information and estimated delivery dates.",
-        "Common Inquiries": "Order status, Tracking information, Delivery estimates, Shipping options, In-store pickup"
+        "Call Type": "Return and Exchange",
+        "Call Type Description": "Customers calling to initiate returns or exchanges of books or other products",
+        "Common Inquiries": "Return policy, Exchange options, Refund process, Product defects"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "New Release Notification",
-        "Call Type Description": "Customer outreach calls to notify them about new book releases, bestsellers, or staff picks that may be of interest.",
-        "Common Inquiries": "Book releases, Bestseller lists, Staff picks, Author events, Pre-order options"
+        "Call Type": "Order Follow-up",
+        "Call Type Description": "Customer service representatives calling customers to follow up on orders, confirm delivery, and offer additional sales or promotions",
+        "Common Inquiries": "Order status, Delivery confirmation, Additional sales, Product recommendations"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Promotional Offer Notification",
-        "Call Type Description": "Calls to notify customers about ongoing promotions, discounts, or special offers on books, e-books, or audiobooks.",
-        "Common Inquiries": "Discount codes, Sale dates, Bundle deals, Membership benefits, Loyalty rewards"
+        "Call Type": "Promotional Offer",
+        "Call Type Description": "Customer service representatives calling customers to offer special promotions, discounts, or loyalty rewards",
+        "Common Inquiries": "Promotional details, Discount offers, Loyalty program benefits, Offer expiration"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Survey and Feedback Collection",
-        "Call Type Description": "Calls to collect customer feedback and survey responses about their experience with the bookstore or library, including event participation and overall satisfaction.",
-        "Common Inquiries": "Survey questions, Feedback forms, Event evaluations, Customer satisfaction ratings, Improvement suggestions"
+        "Call Type": "Customer Survey",
+        "Call Type Description": "Customer service representatives calling customers to gather feedback and opinions on their shopping experience",
+        "Common Inquiries": "Customer satisfaction, Shopping experience, Product feedback, Improvement suggestions"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Book Club and Program Invitation",
-        "Call Type Description": "Calls to invite customers to join book clubs, author readings, or other programs hosted by the bookstore or library.",
-        "Common Inquiries": "Book club schedules, Author appearances, Program descriptions, Registration process, Membership benefits"
+        "Call Type": "Account Update",
+        "Call Type Description": "Customer service representatives calling customers to update account information, confirm email addresses, or validate payment methods",
+        "Common Inquiries": "Account information, Email verification, Payment method validation, Account security"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Loyalty and Rewards Program Notification",
-        "Call Type Description": "Calls to notify customers about loyalty program updates, rewards, or special offers based on their purchasing history and reading habits.",
-        "Common Inquiries": "Loyalty rewards, Points redemption, Exclusive offers, Tier upgrades, Program benefits"
+        "Call Type": "Win-Back Campaign",
+        "Call Type Description": "Customer service representatives calling inactive or lapsed customers to offer personalized promotions and re-engage them with the brand",
+        "Common Inquiries": "Personalized offers, Re-engagement campaigns, Loyalty program benefits, Exclusive deals"
     }
 ]
