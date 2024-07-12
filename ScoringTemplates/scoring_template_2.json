@@ -1,0 +1,184 @@
+[
+    {
+        "Index": "1",
+        "Section": "Greeting",
+        "Question": "Did the agent greet the customer promptly and courteously, mentioning the shoes store and its brand?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent greeted the customer within 5 seconds of connection, using phrases like 'Hello, thank you for calling [Shoes Store Brand]' in a friendly and upbeat tone. **No:** Agent took longer than 5 seconds to greet or used a monotone/apathetic tone."
+    },
+    {
+        "Index": "2",
+        "Section": "Greeting",
+        "Question": "Did the agent introduce themselves and the shoes store they represent?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent clearly stated their full name and the shoes store's name within the first 10 seconds of the call, e.g., 'Hello, this is [Agent's Name] from [Shoes Store Brand].' **No:** Agent failed to provide their name or the shoes store's name, or mumbled it so it was unclear."
+    },
+    {
+        "Index": "3",
+        "Section": "Greeting",
+        "Question": "Did the agent thank the customer for contacting the shoes store?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent explicitly thanked the customer by saying something like 'Thank you for calling [Shoes Store Brand].' **No:** Agent did not express any form of gratitude."
+    },
+    {
+        "Index": "4",
+        "Section": "Customer Identification",
+        "Question": "Did the agent verify the customer's identity as appropriate, such as asking for their name or order number?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent followed security protocols by asking for 1-2 pieces of verification information (e.g., name, order number) and confirmed them against company records. **No:** Agent skipped verification or did it improperly, risking a security breach. **N/A:** Verification not required for the nature of the call."
+    },
+    {
+        "Index": "5",
+        "Section": "Customer Identification",
+        "Question": "Did the agent confirm the customer's contact details and information, such as phone number or email?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent repeated back key information such as phone number or email for confirmation and asked the customer to verify its accuracy. **No:** Agent did not confirm or repeated information incorrectly."
+    },
+    {
+        "Index": "6",
+        "Section": "Customer Identification",
+        "Question": "Did the agent ensure the customer's account information was up to date, including their shoe size or preferred brand?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent asked if there were any updates to contact or account information, including shoe size or preferred brand, and made necessary changes in the system. **No:** Agent did not inquire about or update any account information."
+    },
+    {
+        "Index": "7",
+        "Section": "Needs Identification",
+        "Question": "Did the agent listen actively to the customer's inquiries about shoes, without interrupting?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent allowed the customer to fully explain their inquiry without interruption, used verbal nods ('I understand,' 'Right,' 'Please go on') to show attentiveness. **No:** Agent interrupted the customer multiple times or appeared to be distracted."
+    },
+    {
+        "Index": "8",
+        "Section": "Needs Identification",
+        "Question": "Did the agent ask relevant clarifying questions to understand the customer's shoe-related needs better?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent asked specific, open-ended questions related to the customer's inquiry, such as 'Can you tell me more about the type of shoes you're looking for?' **No:** Agent asked irrelevant or no clarifying questions, leading to misunderstandings."
+    },
+    {
+        "Index": "9",
+        "Section": "Needs Identification",
+        "Question": "Did the agent summarize the customer's shoe-related needs to confirm understanding?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent recapped the main points of the customer's inquiry accurately before proceeding, saying something like, 'So, to confirm, you're looking for a pair of running shoes with good arch support.' **No:** Agent did not summarize or summarized incorrectly, causing confusion."
+    },
+    {
+        "Index": "10",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent demonstrate knowledge of the shoe products, including features, sizes, and brands?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent provided detailed and accurate information about the shoe products, including relevant features, sizes, and brands. **No:** Agent gave incorrect information, was unsure, or had to repeatedly consult a knowledge base."
+    },
+    {
+        "Index": "11",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent provide a suitable shoe product or solution to the customer's inquiry, considering their needs and preferences?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent offered a shoe product that directly addressed the customer's needs and explained why it would be a good fit. **No:** Agent suggested irrelevant solutions or failed to provide a solution altogether."
+    },
+    {
+        "Index": "12",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent explain the shoe product's features and benefits clearly and comprehensively?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used direct and simple language to explain the shoe product's features and benefits, ensuring the customer understood. **No:** Agent used technical jargon, spoke too quickly, or did not explain the features and benefits fully."
+    },
+    {
+        "Index": "13",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent discuss any potential issues or limitations of the proposed shoe product?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent clearly outlined any potential issues or limitations of the shoe product, such as availability or sizing constraints, and suggested alternatives if applicable. **No:** Agent failed to mention significant issues or limitations. **N/A:** No potential issues or limitations associated with the shoe product."
+    },
+    {
+        "Index": "14",
+        "Section": "Value Add / Upsell",
+        "Question": "Did the agent offer any complementary shoe care products or accessories that could benefit the customer?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent identified and suggested relevant complementary products or accessories tailored to the customer's needs without being pushy. **No:** Agent missed an opportunity for a relevant upsell. **N/A:** Upsell not applicable in the context of the call."
+    },
+    {
+        "Index": "15",
+        "Section": "Value Add / Upsell",
+        "Question": "Did the agent explain the benefits of the additional shoe care products or accessories?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent clearly outlined how the additional products or accessories would benefit the customer, using specific examples or scenarios. **No:** Agent did not explain the benefits or did so inadequately. **N/A:** Upsell not applicable."
+    },
+    {
+        "Index": "16",
+        "Section": "Value Add / Upsell",
+        "Question": "Did the agent handle any objections to the upsell professionally and effectively?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent acknowledged the customer's objections, addressed concerns calmly, and provided additional information to alleviate doubts. **No:** Agent dismissed objections or responded defensively. **N/A:** No objections raised or upsell not applicable."
+    },
+    {
+        "Index": "17",
+        "Section": "Closing",
+        "Question": "Did the agent confirm the resolution or next steps with the customer, including any follow-up actions?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent summarized what was done or what will happen next, including timeframes if applicable, and confirmed the customer’s understanding. **No:** Agent did not confirm the resolution or next steps."
+    },
+    {
+        "Index": "18",
+        "Section": "Closing",
+        "Question": "Did the agent offer any additional assistance before ending the call, such as shoe maintenance tips?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent asked an open-ended question such as, 'Is there anything else I can help you with today?' or provided additional resources, like shoe maintenance tips. **No:** Agent did not inquire if further assistance was needed."
+    },
+    {
+        "Index": "19",
+        "Section": "Closing",
+        "Question": "Did the agent close the call courteously, thanking the customer for their business?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used a polite closing statement like, 'Thank you for calling, and have a great day!' **No:** Agent ended the call abruptly or without a courteous closing."
+    },
+    {
+        "Index": "20",
+        "Section": "Closing",
+        "Question": "Did the agent ensure the customer was satisfied with the resolution before ending the call?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent explicitly asked if the customer was satisfied with the resolution and if they had any more concerns. **No:** Agent did not check the customer's satisfaction level before ending the call."
+    },
+    {
+        "Index": "21",
+        "Section": "Rapport",
+        "Question": "Did the agent show empathy and understanding of the customer's shoe-related concerns?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used empathetic statements like, 'I understand how frustrating it must be to find the right shoe size,' and validated the customer’s feelings. **No:** Agent did not acknowledge the customer's emotions or came across as indifferent."
+    },
+    {
+        "Index": "22",
+        "Section": "Rapport",
+        "Question": "Did the agent personalize the interaction, using the customer's name and referencing specific details relevant to their shoe needs?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used the customer's name multiple times during the call and referenced specific details relevant to the customer’s shoe needs. **No:** Agent did not use the customer's name or personalize the conversation."
+    },
+    {
+        "Index": "23",
+        "Section": "Rapport",
+        "Question": "Did the agent maintain a courteous and professional tone throughout the call, using shoe-related terminology accurately?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent consistently used polite language, maintained a professional demeanor, and showed respect throughout the call, using correct shoe-related terminology. **No:** Agent used informal, slang, or rude language, or was condescending."
+    },
+    {
+        "Index": "24",
+        "Section": "Rapport",
+        "Question": "Did the agent use clear and understandable language when discussing shoe products and services?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used simple, jargon-free language that was easy for the customer to understand when discussing shoe products and services. **No:** Agent used technical terms without explanation or spoke too quickly."
+    },
+    {
+        "Index": "25",
+        "Section": "Rapport",
+        "Question": "Did the agent handle any difficult situations or objections related to shoes calmly and effectively?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent stayed calm, listened actively, acknowledged the customer's frustration, and provided clear, constructive responses. **No:** Agent became defensive, raised their voice, or failed to manage the situation effectively."
+    },
+    {
+        "Index": "26",
+        "Section": "Rapport",
+        "Question": "Did the agent make the customer feel valued and appreciated for their shoe-related business?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent made positive affirmations, thanked the customer for their business, and made them feel their shoe-related needs were important. **No:** Agent did not make any effort to make the customer feel valued or appreciated."
+    }
+]

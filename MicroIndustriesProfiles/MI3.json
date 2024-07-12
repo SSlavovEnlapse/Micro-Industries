@@ -2,40 +2,42 @@
     "micro-industry": "Bookstores and Libraries",
     "sections": {
         "Introduction": {
-            "definition": "The micro-industry of Bookstores and Libraries encompasses the retail and provision of printed and digital materials for reading, learning, and entertainment. This micro-industry plays a crucial role in preserving and disseminating knowledge by providing access to books, audiobooks, and digital content.",
-            "scope": "The micro-industry of Bookstores and Libraries is an essential part of the broader publishing and media industry. It caters to individuals, educational institutions, and corporate entities, and is responsible for fostering a culture of reading, learning, and creativity."
+            "definition": "Bookstores and Libraries is a micro-industry that concerns the sale, lending, and exchange of printed and digital materials such as books, audiobooks, e-books, and other publications, as well as the provision of related services and resources.",
+            "scope": "This micro-industry plays a crucial role in preserving and promoting literacy, providing access to knowledge, and facilitating lifelong learning, making it a vital component of the broader publishing industry."
         },
-        "Types of Businesses": {
-            "Types of Businesses": [
-                "**Bookstores**: Retail stores that sell new and used books, audiobooks, e-books, and other reading materials.",
-                "**Libraries**: Public and private institutions that provide free or paid access to books, audiobooks, e-books, and other digital content.",
-                "**Used Bookstores**: Retail stores that specialize in buying and selling used books, often focusing on rare and collectible titles.",
-                "**Online Marketplaces**: E-commerce platforms that connect buyers and sellers of used and new books, audiobooks, and e-books."
-            ]
-        },
-        "Activities": {
-            "Activities": [
-                "**Book Recommendations**: Personalized suggestions for readers based on preferences, reading habits, and genres.",
-                "**Author Events**: Book signings, readings, and discussions with authors and industry experts.",
-                "**Book Clubs**: Organized groups that meet to discuss books, share opinions, and foster a sense of community.",
-                "**Research Assistance**: Expert help and guidance for readers and researchers searching for specific information or topics."
-            ]
-        },
+        "Types of Businesses": [
+            "**Retail Bookstores**: Large chain stores and small local shops that sell new and used books, often with a focus on specific genres or topics.",
+            "**Independent Bookstores**: Small, privately-owned bookstores that often specialize in specific genres, topics, or communities.",
+            "**Used Bookstores**: Stores that primarily sell used books, often with a focus on rare or collectible titles.",
+            "**Online Bookstores**: E-commerce platforms that sell books and other publications directly to customers, often with a wide range of titles and formats.",
+            "**Libraries**: Public, school, academic, and corporate libraries that lend books and provide access to digital resources and research materials.",
+            "**Book Fairs and Festivals**: Temporary events that bring together publishers, authors, and book enthusiasts to celebrate and promote literature."
+        ],
+        "Activities": [
+            "**Book Recommendations**: Providing personalized recommendations to customers based on their reading preferences and interests.",
+            "**Literary Events**: Hosting author talks, book signings, workshops, and other events to promote literacy and bring people together.",
+            "**Collection Development**: Curating and maintaining collections of books, audiobooks, e-books, and other materials for libraries and bookstores.",
+            "**Consignment and Trading**: Buying and selling used books, or trading books with other businesses and individuals.",
+            "**Research and Resource Services**: Providing access to research materials, providing research assistance, and offering information literacy instruction."
+        ],
         "Top Brands": {
             "Americas": [
+                "Indiebound",
                 "Barnes & Noble",
-                "IndieBound",
-                "Amazon"
+                "Amazon",
+                "Kobo"
             ],
             "EMEA": [
                 "Waterstones",
-                "Blackwell's",
-                "Foyles"
+                "WHSmith",
+                "Foyles",
+                "Blackwell"
             ],
             "Asia-Pacific": [
                 "Kinokuniya",
-                "Daiso",
-                "Tokyo Bookstore"
+                "Tsutaya",
+                "LOFT",
+                "Kinokuniya Bookstores"
             ]
         }
     }

@@ -1,62 +1,62 @@
 [
     {
         "Call Direction": "inbound",
-        "Call Type": "Order Tracking",
-        "Call Type Description": "Customers calling to inquire about the status of their online orders, including shipping timelines, delivery dates, and order cancellations.",
-        "Common Inquiries": "Order status, shipping details, delivery times, cancellation requests"
-    },
-    {
-        "Call Direction": "inbound",
         "Call Type": "Product Information",
-        "Call Type Description": "Customers seeking information about specific products, such as features, sizes, colors, pricing, and availability.",
-        "Common Inquiries": "Product features, sizes, colors, pricing, availability, product comparisons"
+        "Call Type Description": "Customers calling to inquire about product features, specifications, sizes, colors, and availability of sports shoes from various brands such as Nike, Adidas, Vans, and others.",
+        "Common Inquiries": "Product dimensions, material, price, shipping, color options"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Return and Exchange",
-        "Call Type Description": "Customers calling to initiate returns, exchanges, or refunds for purchased products, including questions about store policies and procedures.",
-        "Common Inquiries": "Return policy, exchange process, refund timelines, store credit"
+        "Call Type": "Order Tracking",
+        "Call Type Description": "Customers calling to track their online orders, inquire about shipping status, or request updates on delivery times.",
+        "Common Inquiries": "Order status, shipping details, delivery times, tracking numbers"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Account and Payment",
-        "Call Type Description": "Customers calling to inquire about their account information, including login issues, payment methods, and billing inquiries.",
-        "Common Inquiries": "Account login, payment options, billing questions, payment status"
+        "Call Type": "Return/Exchange",
+        "Call Type Description": "Customers calling to initiate a return or exchange of a purchased product due to various reasons such as incorrect size, wrong color, or defects.",
+        "Common Inquiries": "Return policy, exchange process, refund timelines, replacement options"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Warranty and Repair",
-        "Call Type Description": "Customers calling to inquire about warranty information, repair options, and maintenance services for their purchased products.",
-        "Common Inquiries": "Warranty details, repair options, maintenance services, product recalls"
+        "Call Type": "Promotion/Discount",
+        "Call Type Description": "Customers calling to inquire about ongoing promotions, discounts, or special offers on sports shoes from various brands.",
+        "Common Inquiries": "Discount codes, sale dates, promotion details, price matches"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Account/Registration",
+        "Call Type Description": "Customers calling to create or manage their online accounts, reset passwords, or inquire about loyalty programs.",
+        "Common Inquiries": "Account login, password reset, loyalty rewards, registration process"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Welcome and Onboarding",
-        "Call Type Description": "Outbound calls to welcome new customers, introduce them to products and services, and provide onboarding guidance.",
-        "Common Inquiries": "Product benefits, service features, account setup, loyalty programs"
+        "Call Type": "Order Confirmation",
+        "Call Type Description": "Agents calling customers to confirm their online orders, verify shipping details, and provide order summaries.",
+        "Common Inquiries": "Order confirmation, shipping details, payment verification"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Special Offers and Promotions",
-        "Call Type Description": "Outbound calls to inform customers about limited-time offers, discounts, and special promotions.",
-        "Common Inquiries": "Offer details, promotion eligibility, discount codes, loyalty rewards"
+        "Call Type": "Sales Promotion",
+        "Call Type Description": "Agents calling customers to inform them about exclusive promotions, special offers, or new product releases from various sports shoe brands.",
+        "Common Inquiries": "Promotion details, product features, price, availability"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Customer Feedback and Survey",
-        "Call Type Description": "Outbound calls to collect customer feedback, conduct surveys, and gather insights to improve products and services.",
-        "Common Inquiries": "Survey questions, feedback collection, product improvement suggestions"
+        "Call Type": "Customer Feedback",
+        "Call Type Description": "Agents calling customers to gather feedback on their recent purchases, ratings, or reviews of sports shoes from various brands.",
+        "Common Inquiries": "Product satisfaction, ratings, review process, feedback questions"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Abandoned Cart Follow-up",
-        "Call Type Description": "Outbound calls to follow up with customers who have abandoned their online shopping carts, to help complete their purchases.",
-        "Common Inquiries": "Cart contents, purchase completion, product availability, special offers"
+        "Call Type": "Win-Back",
+        "Call Type Description": "Agents calling inactive or dormant customers to win them back with special offers, loyalty rewards, or new product releases.",
+        "Common Inquiries": "Special offers, loyalty rewards, new products, win-back incentives"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Loyalty Program Updates",
-        "Call Type Description": "Outbound calls to inform customers about loyalty program updates, rewards, and benefits.",
-        "Common Inquiries": "Program updates, reward balances, benefit explanations, loyalty tier status"
+        "Call Type": "Survey/Research",
+        "Call Type Description": "Agents calling customers to participate in surveys or research studies to gather insights on sports shoe preferences, purchasing habits, and brand loyalty.",
+        "Common Inquiries": "Survey questions, research topics, participation incentives, survey duration"
     }
 ]

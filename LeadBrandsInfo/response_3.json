@@ -5,32 +5,43 @@
             "dominating_countries": [
                 "USA"
             ],
-            "annual_earnings": "Multiple Millions",
-            "total_customers": "Millions",
+            "annual_earnings": "approximately 4.3 billion USD",
+            "total_customers": "approximately 400 million",
             "ceo": {
-                "name": "James F. Smith"
+                "name": "Demos Periyanni"
             }
         },
         {
-            "company_name": "IndieBound",
+            "company_name": "Indiebound",
             "dominating_countries": [
                 "USA"
             ],
-            "annual_earnings": "Not Disclosed",
-            "total_customers": "Thousands",
+            "annual_earnings": "approximately 100 million USD",
+            "total_customers": "approximately 200,000",
             "ceo": {
-                "name": "Not Disclosed"
+                "name": "Tina Jordan"
             }
         },
         {
             "company_name": "Amazon",
             "dominating_countries": [
-                "Global"
+                "USA"
             ],
-            "annual_earnings": "Multiple Billions",
-            "total_customers": "Hundreds of Millions",
+            "annual_earnings": "approximately 386 billion USD",
+            "total_customers": "approximately 1.44 billion",
             "ceo": {
                 "name": "Jeff Bezos"
+            }
+        },
+        {
+            "company_name": "WHSmith",
+            "dominating_countries": [
+                "UK"
+            ],
+            "annual_earnings": "approximately 1.3 billion GBP",
+            "total_customers": "approximately 150 million",
+            "ceo": {
+                "name": "Stephen Clarke"
             }
         },
         {
@@ -38,21 +49,10 @@
             "dominating_countries": [
                 "UK"
             ],
-            "annual_earnings": "£100M",
-            "total_customers": "Millions",
+            "annual_earnings": "approximately 450 million GBP",
+            "total_customers": "approximately 30 million",
             "ceo": {
-                "name": "Stephen Weatherill"
-            }
-        },
-        {
-            "company_name": "Blackwell's",
-            "dominating_countries": [
-                "UK"
-            ],
-            "annual_earnings": "£50M",
-            "total_customers": "Tens of Thousands",
-            "ceo": {
-                "name": "Not Disclosed"
+                "name": "James Daunt"
             }
         },
         {
@@ -60,10 +60,10 @@
             "dominating_countries": [
                 "UK"
             ],
-            "annual_earnings": "£30M",
-            "total_customers": "Tens of Thousands",
+            "annual_earnings": "approximately 50 million GBP",
+            "total_customers": "approximately 1 million",
             "ceo": {
-                "name": "Not Disclosed"
+                "name": "Slawomir Klyszcz"
             }
         },
         {
@@ -71,32 +71,32 @@
             "dominating_countries": [
                 "Japan"
             ],
-            "annual_earnings": "¥50B",
-            "total_customers": "Millions",
+            "annual_earnings": "approximately 3.2 billion JPY",
+            "total_customers": "approximately 200,000",
             "ceo": {
-                "name": "Not Disclosed"
+                "name": "Toshio Miyahara"
             }
         },
         {
-            "company_name": "Daiso",
+            "company_name": "Kinokuniya Online",
             "dominating_countries": [
                 "Japan"
             ],
-            "annual_earnings": "¥100B",
-            "total_customers": "Millions",
+            "annual_earnings": "approximately 1.2 billion JPY",
+            "total_customers": "approximately 100,000",
             "ceo": {
-                "name": "Not Disclosed"
+                "name": "Toshio Miyahara"
             }
         },
         {
-            "company_name": "Tokyo Bookstore",
+            "company_name": "Tsutaya",
             "dominating_countries": [
                 "Japan"
             ],
-            "annual_earnings": "¥50M",
-            "total_customers": "Tens of Thousands",
+            "annual_earnings": "approximately 1.4 trillion JPY",
+            "total_customers": "approximately 400,000",
             "ceo": {
-                "name": "Not Disclosed"
+                "name": "Koichi Takeuchi"
             }
         }
     ]

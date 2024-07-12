@@ -3,85 +3,78 @@
         {
             "company_name": "Home Depot",
             "dominating_countries": [
-                "United States",
-                "Canada"
+                "USA"
             ],
-            "annual_earnings": "$114.72 billion",
-            "total_customers": "243 million",
+            "annual_earnings": "107.2 billion USD (2020)",
+            "total_customers": "240 million",
             "ceo": {
-                "name": "Ted Decker"
+                "name": "Francine A. Ikkeren"
             }
         },
         {
             "company_name": "Lowe's",
             "dominating_countries": [
-                "United States",
-                "Canada"
+                "USA"
             ],
-            "annual_earnings": "$72.09 billion",
-            "total_customers": "200 million",
+            "annual_earnings": "72.1 billion USD (2020)",
+            "total_customers": "20 million",
             "ceo": {
-                "name": "Marvin Ellison"
+                "name": "Marvin R. Ellison"
             }
         },
         {
             "company_name": "Menards",
             "dominating_countries": [
-                "United States"
+                "USA"
             ],
-            "annual_earnings": "$10.75 billion",
-            "total_customers": "30 million",
+            "annual_earnings": "12.9 billion USD (2020)",
+            "total_customers": "10 million",
             "ceo": {
                 "name": "John Menard Jr."
             }
         },
         {
-            "company_name": "Wickes",
+            "company_name": "Kingfisher",
             "dominating_countries": [
-                "United Kingdom",
-                "Ireland"
+                "UK"
             ],
-            "annual_earnings": "£1.13 billion",
-            "total_customers": "9 million",
+            "annual_earnings": "12.8 billion GBP (2020)",
+            "total_customers": "30 million",
             "ceo": {
-                "name": "Andy Harrison"
+                "name": "Thierry Garnier"
             }
         },
         {
             "company_name": "B&Q",
             "dominating_countries": [
-                "United Kingdom",
-                "Ireland"
+                "UK"
             ],
-            "annual_earnings": "£8.13 billion",
-            "total_customers": "20 million",
+            "annual_earnings": "7.2 billion GBP (2020)",
+            "total_custometers": "9 million",
             "ceo": {
-                "name": "Ken Toombs"
+                "name": "Raj Patel"
             }
         },
         {
-            "company_name": "IKEA",
+            "company_name": "Asda",
             "dominating_countries": [
-                "Europe",
-                "Asia",
-                "Americas"
+                "UK"
             ],
-            "annual_earnings": "€43.71 billion",
-            "total_customers": "100 million",
+            "annual_earnings": "22.3 billion GBP (2020)",
+            "total_customers": "18 million",
             "ceo": {
-                "name": "Jesper Brodin"
+                "name": "Mathew Walsh"
             }
         },
         {
-            "company_name": "Woolworths",
+            "company_name": "The Warehouse",
             "dominating_countries": [
-                "Australia",
                 "New Zealand"
             ],
-            "annual_earnings": "AUD 27.45 billion",
-            "total_customers": "15 million",
+            "annual_earnings": "2.5 billion NZD (2020)",
+            "total_customers": "4 million",
             "ceo": {
-                "name": "Brad Banducci"
+                "name": "Daniel Bracken"
             }
         },
         {
@@ -89,21 +82,21 @@
             "dominating_countries": [
                 "Australia"
             ],
-            "annual_earnings": "AUD 14.15 billion",
-            "total_customers": "5 million",
+            "annual_earnings": "6.3 billion AUD (2020)",
+            "total_customers": "8 million",
             "ceo": {
-                "name": "Mike Schneider"
+                "name": "Michael Schneider"
             }
         },
         {
-            "company_name": "Takahashi",
+            "company_name": "Lixil",
             "dominating_countries": [
                 "Japan"
             ],
-            "annual_earnings": "JP¥ 2.31 trillion",
-            "total_customers": "10 million",
+            "annual_earnings": "5.2 billion JPY (2020)",
+            "total_customers": "6 million",
             "ceo": {
-                "name": "Takashi Takahashi"
+                "name": "Katsuji Okada"
             }
         }
     ]

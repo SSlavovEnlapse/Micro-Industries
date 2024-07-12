@@ -1,0 +1,128 @@
+[
+    {
+        "Index": "1",
+        "Section": "Greeting",
+        "Question": "Did the agent greet the customer promptly and courteously, acknowledging the customer's recent purchase?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent greeted the customer within 5 seconds of connection, using phrases like 'Hello, thank you for your recent purchase from [Bookstore/Library Name]' in a friendly and upbeat tone. **No:** Agent took longer than 5 seconds to greet or used a monotone/apathetic tone."
+    },
+    {
+        "Index": "2",
+        "Section": "Greeting",
+        "Question": "Did the agent introduce themselves and the bookstore/library they represent?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent clearly stated their full name and the bookstore/library's name within the first 10 seconds of the call, e.g., 'Hello, this is [Agent's Name] from [Bookstore/Library Name].' **No:** Agent failed to provide their name or the bookstore/library's name, or mumbled it so it was unclear."
+    },
+    {
+        "Index": "3",
+        "Section": "Greeting",
+        "Question": "Did the agent thank the customer for their business and express appreciation for their loyalty?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent explicitly thanked the customer by saying something like 'Thank you for choosing [Bookstore/Library Name] and for being a valued customer.' **No:** Agent did not express any form of gratitude."
+    },
+    {
+        "Index": "4",
+        "Section": "Customer Identification",
+        "Question": "Did the agent verify the customer's identity as appropriate?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent followed security protocols by asking for 2-3 pieces of verification information (e.g., account number, email) and confirmed them against company records. **No:** Agent skipped verification or did it improperly, risking a security breach. **N/A:** Verification not required for the nature of the call."
+    },
+    {
+        "Index": "5",
+        "Section": "Customer Identification",
+        "Question": "Did the agent confirm the customer's contact details and information related to their recent purchase?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent repeated back key information such as book title, author, or purchase date for confirmation and asked the customer to verify its accuracy. **No:** Agent did not confirm or repeated information incorrectly."
+    },
+    {
+        "Index": "6",
+        "Section": "Needs Identification",
+        "Question": "Did the agent listen actively to the customer's feedback about their recent purchase without interrupting?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent allowed the customer to fully explain their feedback without interruption, used verbal nods ('I understand,' 'Right,' 'Please go on') to show attentiveness. **No:** Agent interrupted the customer multiple times or appeared to be distracted."
+    },
+    {
+        "Index": "7",
+        "Section": "Needs Identification",
+        "Question": "Did the agent ask relevant clarifying questions to understand the customer's feedback better?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent asked specific, open-ended questions related to the feedback ('Can you tell me more about...?', 'How did you find...?'). **No:** Agent asked irrelevant or no clarifying questions, leading to misunderstandings."
+    },
+    {
+        "Index": "8",
+        "Section": "Needs Identification",
+        "Question": "Did the agent summarize the customer's feedback to confirm understanding?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent recapped the main points of the customer's feedback accurately before proceeding, saying something like, 'So, to confirm, you enjoyed the book but had some issues with...'. **No:** Agent did not summarize or summarized incorrectly, causing confusion."
+    },
+    {
+        "Index": "9",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent demonstrate knowledge of the bookstore/library's products and services?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent provided detailed and accurate information about the bookstore/library's offerings, including book recommendations, author events, or research services. **No:** Agent gave incorrect information, was unsure, or had to repeatedly consult a knowledge base."
+    },
+    {
+        "Index": "10",
+        "Section": "Solution Proposal",
+        "Question": "Did the agent offer an accurate and appropriate solution to the customer's feedback?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent offered a solution that directly addressed the customer's feedback and explained why it would work. **No:** Agent suggested irrelevant solutions or failed to provide a solution altogether."
+    },
+    {
+        "Index": "11",
+        "Section": "Value Add / Upsell",
+        "Question": "Did the agent offer any additional products or services that could benefit the customer, such as book clubs or author events?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent identified and suggested relevant additional products or services tailored to the customer's needs without being pushy. **No:** Agent missed an opportunity for a relevant upsell. **N/A:** Upsell not applicable in the context of the call."
+    },
+    {
+        "Index": "12",
+        "Section": "Value Add / Upsell",
+        "Question": "Did the agent explain the benefits of the additional products or services?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent clearly outlined how the additional product/service would benefit the customer, using specific examples or scenarios. **No:** Agent did not explain the benefits or did so inadequately. **N/A:** Upsell not applicable."
+    },
+    {
+        "Index": "13",
+        "Section": "Closing",
+        "Question": "Did the agent confirm the resolution or next steps with the customer?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent summarized what was done or what will happen next, including timeframes if applicable, and confirmed the customer’s understanding. **No:** Agent did not confirm the resolution or next steps."
+    },
+    {
+        "Index": "14",
+        "Section": "Closing",
+        "Question": "Did the agent offer any additional assistance before ending the call?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent asked an open-ended question such as, 'Is there anything else I can help you with today?' **No:** Agent did not inquire if further assistance was needed."
+    },
+    {
+        "Index": "15",
+        "Section": "Rapport",
+        "Question": "Did the agent show empathy and understanding of the customer's concerns about their recent purchase?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used empathetic statements like, 'I understand how frustrating this must be for you,' and validated the customer’s feelings. **No:** Agent did not acknowledge the customer's emotions or came across as indifferent."
+    },
+    {
+        "Index": "16",
+        "Section": "Rapport",
+        "Question": "Did the agent personalize the interaction (e.g., using the customer's name)?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent used the customer's name multiple times during the call and referenced specific details relevant to the customer’s situation. **No:** Agent did not use the customer's name or personalize the conversation."
+    },
+    {
+        "Index": "17",
+        "Section": "Rapport",
+        "Question": "Did the agent maintain a courteous and professional tone throughout the call?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent consistently used polite language, maintained a professional demeanor, and showed respect throughout the call. **No:** Agent used informal, slang, or rude language, or was condescending."
+    },
+    {
+        "Index": "18",
+        "Section": "Rapport",
+        "Question": "Did the agent make the customer feel valued and appreciated?",
+        "Scoring": "Yes / No",
+        "Scoring Criteria": "**Yes:** Agent made positive affirmations, thanked the customer for their business, and made them feel their purchase was important. **No:** Agent did not make any effort to make the customer feel valued or appreciated."
+    }
+]

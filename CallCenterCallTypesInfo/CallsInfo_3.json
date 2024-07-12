@@ -1,62 +1,62 @@
 [
     {
         "Call Direction": "inbound",
-        "Call Type": "Product Inquiry",
-        "Call Type Description": "Customers calling to inquire about availability, pricing, and details of specific books or authors",
-        "Common Inquiries": "Book availability, Pricing, Author information, Book recommendations"
+        "Call Type": "Order Inquiry",
+        "Call Type Description": "Customers calling to inquire about the status of their online or in-store orders, including tracking information, delivery timelines, and product availability.",
+        "Common Inquiries": "Order Status, Tracking Information, Delivery Timelines, Product Availability"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Order Placement",
-        "Call Type Description": "Customers calling to place orders for books, including special requests and bulk orders",
-        "Common Inquiries": "Order status, Shipping options, Payment methods, Discounts and promotions"
+        "Call Type": "Product Information",
+        "Call Type Description": "Customers seeking information about specific book titles, authors, or genres, including availability, pricing, and recommendations.",
+        "Common Inquiries": "Book Availability, Pricing, Author Recommendations, Genre Suggestions"
+    },
+    {
+        "Call Direction": "inbound",
+        "Call Type": "Returns and Refunds",
+        "Call Type Description": "Customers calling to initiate returns or request refunds for products that are damaged, defective, or not meeting their expectations.",
+        "Common Inquiries": "Return Policy, Refund Process, Damaged Products, Defective Items"
     },
     {
         "Call Direction": "inbound",
         "Call Type": "Store Information",
-        "Call Type Description": "Customers calling to inquire about store hours, locations, and services offered",
-        "Common Inquiries": "Store hours, Directions, In-store events, Return policy"
+        "Call Type Description": "Customers seeking information about store locations, hours of operation, in-store events, and services offered.",
+        "Common Inquiries": "Store Hours, Location, In-Store Events, Services Offered"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Gift Card Balance",
-        "Call Type Description": "Customers calling to check the balance of their gift cards or to inquire about gift card purchases",
-        "Common Inquiries": "Gift card balance, Gift card purchase, Gift card redemption"
-    },
-    {
-        "Call Direction": "inbound",
-        "Call Type": "Return and Exchange",
-        "Call Type Description": "Customers calling to initiate returns or exchanges of books or other products",
-        "Common Inquiries": "Return policy, Exchange options, Refund process, Product defects"
+        "Call Type": "Membership and Loyalty",
+        "Call Type Description": "Customers inquiring about loyalty programs, membership benefits, and rewards redemption.",
+        "Common Inquiries": "Membership Benefits, Rewards Redemption, Loyalty Program, Points Balance"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Order Follow-up",
-        "Call Type Description": "Customer service representatives calling customers to follow up on orders, confirm delivery, and offer additional sales or promotions",
-        "Common Inquiries": "Order status, Delivery confirmation, Additional sales, Product recommendations"
+        "Call Type": "Abandoned Cart Follow-up",
+        "Call Type Description": "Agents calling customers who have abandoned their online shopping carts to offer assistance, provide recommendations, and encourage completion of the purchase.",
+        "Common Inquiries": "Product Availability, Pricing, Shipping Options, Cart Assistance"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Promotional Offer",
-        "Call Type Description": "Customer service representatives calling customers to offer special promotions, discounts, or loyalty rewards",
-        "Common Inquiries": "Promotional details, Discount offers, Loyalty program benefits, Offer expiration"
-    },
-    {
-        "Call Direction": "outbound",
-        "Call Type": "Customer Survey",
-        "Call Type Description": "Customer service representatives calling customers to gather feedback and opinions on their shopping experience",
-        "Common Inquiries": "Customer satisfaction, Shopping experience, Product feedback, Improvement suggestions"
-    },
-    {
-        "Call Direction": "outbound",
-        "Call Type": "Account Update",
-        "Call Type Description": "Customer service representatives calling customers to update account information, confirm email addresses, or validate payment methods",
-        "Common Inquiries": "Account information, Email verification, Payment method validation, Account security"
+        "Call Type": "Post-Purchase Follow-up",
+        "Call Type Description": "Agents calling customers after a purchase to ensure satisfaction, gather feedback, and offer additional products or services.",
+        "Common Inquiries": "Product Satisfaction, Feedback, Additional Products, Services Offered"
     },
     {
         "Call Direction": "outbound",
         "Call Type": "Win-Back Campaign",
-        "Call Type Description": "Customer service representatives calling inactive or lapsed customers to offer personalized promotions and re-engage them with the brand",
-        "Common Inquiries": "Personalized offers, Re-engagement campaigns, Loyalty program benefits, Exclusive deals"
+        "Call Type Description": "Agents calling inactive or inactive customers to re-engage them with the brand, offer personalized recommendations, and provide exclusive offers.",
+        "Common Inquiries": "Personalized Recommendations, Exclusive Offers, Brand Engagement, Account Reactivation"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Survey and Feedback",
+        "Call Type Description": "Agents calling customers to gather feedback on their shopping experience, provide surveys, and improve overall customer satisfaction.",
+        "Common Inquiries": "Shopping Experience, Feedback, Surveys, Customer Satisfaction"
+    },
+    {
+        "Call Direction": "outbound",
+        "Call Type": "Promotional Offers",
+        "Call Type Description": "Agents calling customers to inform them about ongoing promotions, special deals, and limited-time offers.",
+        "Common Inquiries": "Promotional Offers, Discounts, Limited-Time Deals, Special Offers"
     }
 ]

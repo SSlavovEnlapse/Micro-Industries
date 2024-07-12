@@ -1,62 +1,62 @@
 [
     {
         "Call Direction": "inbound",
-        "Call Type": "Product Information Inquiry",
-        "Call Type Description": "Customers calling to ask about product features, specifications, prices, and availability.",
-        "Common Inquiries": "Product Options, Product Reviews, Price Comparison"
+        "Call Type": "Product Inquiry",
+        "Call Type Description": "Customer is calling to inquire about a specific product, its features, pricing, and availability. They may also be seeking advice on which product to choose or asking about product comparisons.",
+        "Common Inquiries": "Product features, Pricing, Availability, Product recommendations"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Order Status Inquiry",
-        "Call Type Description": "Customers calling to check on the status of their orders, including shipment and delivery details.",
-        "Common Inquiries": "Order Tracking, Delivery Timeframes, Cancellation Requests"
+        "Call Type": "Order Tracking",
+        "Call Type Description": "Customer is calling to track the status of their online or in-store order, including delivery dates, shipping information, and order modifications.",
+        "Common Inquiries": "Order status, Delivery dates, Shipping information, Order modifications"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Return or Exchange Request",
-        "Call Type Description": "Customers calling to initiate a return or exchange of a product due to various reasons such as defects, wrong items, or buyer's remorse.",
-        "Common Inquiries": "Return Policy, Exchange Process, Refund Timeframes"
+        "Call Type": "Return/Refund Inquiry",
+        "Call Type Description": "Customer is calling to inquire about the return or refund process for a product they are not satisfied with, including return policy, refund timelines, and exchange options.",
+        "Common Inquiries": "Return policy, Refund timelines, Exchange options, Product replacements"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Store Location and Hours Inquiry",
-        "Call Type Description": "Customers calling to ask about store locations, hours of operation, and directions.",
-        "Common Inquiries": "Store Addresses, Business Hours, Directions"
+        "Call Type": "Store Information",
+        "Call Type Description": "Customer is calling to inquire about store hours, locations, phone numbers, or other general store information.",
+        "Common Inquiries": "Store hours, Store locations, Phone numbers, Directions to store"
     },
     {
         "Call Direction": "inbound",
-        "Call Type": "Product Availability Inquiry",
-        "Call Type Description": "Customers calling to check if a specific product is available in-store or online.",
-        "Common Inquiries": "Product Availability, Stock Levels, Restocking Timeframes"
+        "Call Type": "Payment/Account Issue",
+        "Call Type Description": "Customer is calling to report an issue with their payment, such as a declined credit card, or to inquire about their account status, including loyalty program points or rewards.",
+        "Common Inquiries": "Payment issues, Account status, Loyalty program points, Rewards"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Order Confirmation and Verification",
-        "Call Type Description": "Representatives calling customers to confirm and verify their orders, ensuring accuracy and completeness.",
-        "Common Inquiries": "Order Verification, Payment Confirmation, Delivery Details"
+        "Call Type": "Customer Follow-up",
+        "Call Type Description": "Agent is calling to follow up on a previous customer interaction, such as a purchase or service request, to ensure the customer is satisfied and to offer additional assistance or product recommendations.",
+        "Common Inquiries": "Customer satisfaction, Product recommendations, Additional assistance"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Customer Satisfaction Survey",
-        "Call Type Description": "Representatives calling customers to gather feedback on their recent shopping experiences, product satisfaction, and overall service quality.",
-        "Common Inquiries": "Purchase Experience, Product Satisfaction, Recommendation Likelihood"
+        "Call Type": "Appointment Scheduling",
+        "Call Type Description": "Agent is calling to schedule an appointment for a customer's home improvement project, including booking a consultation or installation.",
+        "Common Inquiries": "Appointment scheduling, Consultation scheduling, Installation scheduling"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Promotional and Sales Offers",
-        "Call Type Description": "Representatives calling customers to inform them about special promotions, discounts, and limited-time offers.",
-        "Common Inquiries": "Promotional Details, Offer Validity, Discount Codes"
+        "Call Type": "Promotion/Discount Notification",
+        "Call Type Description": "Agent is calling to inform customers about ongoing promotions, discounts, or special offers, and to encourage them to take advantage of these deals.",
+        "Common Inquiries": "Promotion details, Discount information, Offer expiration dates"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Account and Loyalty Program Management",
-        "Call Type Description": "Representatives calling customers to manage their accounts, update loyalty program information, and provide personalized offers.",
-        "Common Inquiries": "Account Updates, Loyalty Program Benefits, Reward Redemption"
+        "Call Type": "Survey/Feedback Collection",
+        "Call Type Description": "Agent is calling to collect feedback from customers about their recent experience with the company, including their satisfaction with products and services.",
+        "Common Inquiries": "Customer feedback, Satisfaction ratings, Improvement suggestions"
     },
     {
         "Call Direction": "outbound",
-        "Call Type": "Win-Back and Retention",
-        "Call Type Description": "Representatives calling inactive or lapsed customers to re-engage them with the brand, offer personalized solutions, and prevent churn.",
-        "Common Inquiries": "Special Offers, Personalized Solutions, Re-Engagement Incentives"
+        "Call Type": "Win-Back",
+        "Call Type Description": "Agent is calling to win back customers who have not made a purchase in a while or have expressed dissatisfaction with the company, offering personalized solutions and incentives to retain their business.",
+        "Common Inquiries": "Customer retention, Incentives, Personalized solutions"
     }
 ]

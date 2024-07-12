@@ -3,133 +3,92 @@
         {
             "company_name": "Nike",
             "dominating_countries": [
-                "United States"
+                "USA",
+                "Canada",
+                "Mexico"
             ],
-            "annual_earnings": "$39.1 billion",
-            "total_customers": "1 billion",
+            "annual_earnings": "34.3 billion USD",
+            "total_customers": "1.2 billion",
             "ceo": {
                 "name": "John Donahoe"
             }
         },
         {
-            "company_name": "Converse",
-            "dominating_countries": [
-                "United States"
-            ],
-            "annual_earnings": "$2.5 billion",
-            "total_customers": "100 million",
-            "ceo": {
-                "name": "Helen Mirman"
-            }
-        },
-        {
             "company_name": "Adidas",
             "dominating_countries": [
-                "Germany"
+                "Germany",
+                "UK",
+                "France"
             ],
-            "annual_earnings": "$25.9 billion",
-            "total_customers": "200 million",
+            "annual_earnings": "25.9 billion EUR",
+            "total_customers": "620 million",
             "ceo": {
                 "name": "Kasper Rorsted"
             }
         },
         {
-            "company_name": "Reebok",
+            "company_name": "Vans",
             "dominating_countries": [
-                "United States"
+                "USA",
+                "Japan",
+                "UK"
             ],
-            "annual_earnings": "$2.5 billion",
-            "total_customers": "50 million",
+            "annual_earnings": "3.7 billion USD",
+            "total_customers": "200 million",
             "ceo": {
-                "name": "Matt O'Toole"
+                "name": "Steve Rendle"
             }
         },
         {
             "company_name": "Puma",
             "dominating_countries": [
-                "Germany"
+                "Germany",
+                "UK",
+                "France"
             ],
-            "annual_earnings": "$4.3 billion",
-            "total_customers": "100 million",
+            "annual_earnings": "3.6 billion EUR",
+            "total_customers": "150 million",
             "ceo": {
                 "name": "Bjørn Gulden"
             }
         },
         {
+            "company_name": "ASICS",
+            "dominating_countries": [
+                "Japan",
+                "USA",
+                "China"
+            ],
+            "annual_earnings": "2.9 billion USD",
+            "total_customers": "100 million",
+            "ceo": {
+                "name": "Yousuke Takii"
+            }
+        },
+        {
             "company_name": "New Balance",
             "dominating_countries": [
-                "United States"
+                "USA",
+                "UK",
+                "Canada"
             ],
-            "annual_earnings": "$4.5 billion",
-            "total_customers": "50 million",
+            "annual_earnings": "4.4 billion USD",
+            "total_customers": "200 million",
             "ceo": {
-                "name": "Joseph Premuro"
+                "name": "Anne Marie Comba"
             }
         },
         {
-            "company_name": "Vans",
+            "company_name": "Toms",
             "dominating_countries": [
-                "United States"
-            ],
-            "annual_earnings": "$2.5 billion",
-            "total_customers": "20 million",
-            "ceo": {
-                "name": "Doug Palladini"
-            }
-        },
-        {
-            "company_name": "Supra",
-            "dominating_countries": [
-                "Germany"
-            ],
-            "annual_earnings": "$500 million",
-            "total_customers": "10 million",
-            "ceo": {
-                "name": "Todd Roberts"
-            }
-        },
-        {
-            "company_name": "Li-Ning",
-            "dominating_countries": [
+                "USA",
+                "Mexico",
                 "China"
             ],
-            "annual_earnings": "$1.2 billion",
-            "total_customers": "50 million",
+            "annual_earnings": "1.1 billion USD",
+            "total_customers": "100 million",
             "ceo": {
-                "name": "Zhang Zhiyong"
-            }
-        },
-        {
-            "company_name": "Anta",
-            "dominating_countries": [
-                "China"
-            ],
-            "annual_earnings": "$2.3 billion",
-            "total_customers": "20 million",
-            "ceo": {
-                "name": "Dong Mingzhu"
-            }
-        },
-        {
-            "company_name": "361°",
-            "dominating_countries": [
-                "China"
-            ],
-            "annual_earnings": "$500 million",
-            "total_customers": "10 million",
-            "ceo": {
-                "name": "Gao De"
-            }
-        },
-        {
-            "company_name": "Ecco",
-            "dominating_countries": [
-                "Denmark"
-            ],
-            "annual_earnings": "$1 billion",
-            "total_customers": "50 million",
-            "ceo": {
-                "name": "Kasper Elgestrup"
+                "name": "Jim Balfour"
             }
         }
     ]

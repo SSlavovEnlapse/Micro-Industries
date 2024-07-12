@@ -1,41 +1,25 @@
 import os
 import json
-from groq import Groq
 import random
+from groq import Groq
 
-groq_api_key = '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'
-client = Groq(api_key=groq_api_key)
 
-# Function to load JSON data from file - the 3 different micro-industries
+# Function to load JSON data from file
 def load_json(file_path):
-    with open(file_path) as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
-    
-# Function to load JSON data from file - multiple JSONs
-def load_json_files(filepath):
+
+
+# Function to load JSON data from multiple JSON files in a directory
+def load_json_files(dir_path):
     json_files = []
-    for filename in os.listdir(filepath):
+    for filename in os.listdir(dir_path):
         if filename.endswith('.json'):
-            with open(os.path.join(filepath, filename), 'r') as file:
+            with open(os.path.join(dir_path, filename), 'r', encoding='utf-8') as file:
                 data = json.load(file)
                 json_files.append(data)
     return json_files
 
-# Hard-coded file paths
-differentMI_filepath = "C:/Users/sslavov/Desktop/python api calls/First API Call/Micro-Industries/microIndustries.json"
-miProfile_filepath = "C:/Users/sslavov/Desktop/python api calls/First API Call/Micro-Industries/MicroIndustriesProfiles"
-miCallsInfo_filepath = "C:/Users/sslavov/Desktop/python api calls/First API Call/Micro-Industries/CallCenterCallTypesInfo"
-output_dir = "C:/Users/sslavov/Desktop/python api calls/First API Call/Micro-Industries/ScoringTemplates"
-
-# Load micro-industry types
-micro_industries_data = load_json(differentMI_filepath)
-micIndustry_array = micro_industries_data.get('micro-industries', [])
-
-# Load micro-industry profile
-mi_profile_list = load_json_files(miProfile_filepath)
-
-# Load call information 
-mi_calls_list = load_json_files(miCallsInfo_filepath)
 
 def parse_introductions(mi_profiles):
     introductions = []
@@ -45,36 +29,28 @@ def parse_introductions(mi_profiles):
         introductions.append(concatenated_intro)
     return introductions
 
-# Parsing the Introduction sections from the mi_profile_list
-introduction_list = parse_introductions(mi_profile_list)
 
 def parse_activities(mi_profiles):
     activities_list = []
     for profile in mi_profiles:
         activities = profile["sections"]["Activities"]
-        formatted_activities = []
-        for idx, activity in enumerate(activities, 1):
-            activity = activity.replace("**", "")  # Remove asterisks
-            formatted_activities.append(f"{idx}. {activity}")
+        formatted_activities = [
+            f"{idx + 1}. {activity.replace('**', '')}" for idx, activity in enumerate(activities)
+        ]
         activities_list.append("\n".join(formatted_activities))
     return activities_list
 
-# Parsing the Activities sections from the mi_profile_list
-activities_list = parse_activities(mi_profile_list)
 
 def parse_types_of_businesses(mi_profiles):
     businesses_list = []
     for profile in mi_profiles:
         businesses = profile["sections"]["Types of Businesses"]
-        formatted_businesses = []
-        for idx, business in enumerate(businesses, 1):
-            business = business.replace("**", "")  # Remove asterisks
-            formatted_businesses.append(f"{idx}. {business}")
+        formatted_businesses = [
+            f"{idx + 1}. {business.replace('**', '')}" for idx, business in enumerate(businesses)
+        ]
         businesses_list.append("\n".join(formatted_businesses))
     return businesses_list
 
-# Parsing the Types of Businesses sections from the mi_profile_list
-businesses_list = parse_types_of_businesses(mi_profile_list)
 
 def format_call_types(filepath):
     try:
@@ -88,7 +64,6 @@ def format_call_types(filepath):
         return []
 
     formatted_calls = []
-
     for call_type in data:
         formatted_call = (
             f"Contact Center Call Type: {call_type['Call Type']}\n"
@@ -96,16 +71,9 @@ def format_call_types(filepath):
             f"Contact Center Call Type Common Queries: {call_type['Common Inquiries']}\n"
         )
         formatted_calls.append(formatted_call)
-    
+
     return formatted_calls
 
-# Parsing Contact Center Call Type Info
-calls_1_filepath = os.path.join(miCallsInfo_filepath, "CallsInfo_1.json")
-calls_2_filepath = os.path.join(miCallsInfo_filepath, "CallsInfo_2.json")
-calls_3_filepath = os.path.join(miCallsInfo_filepath, "CallsInfo_3.json")
-calls_for_mi1_list = format_call_types(calls_1_filepath)
-calls_for_mi2_list = format_call_types(calls_2_filepath)
-calls_for_mi3_list = format_call_types(calls_3_filepath)
 
 # Validate and clean the JSON output
 def validate_and_clean_json(json_str):
@@ -113,30 +81,54 @@ def validate_and_clean_json(json_str):
         return json.loads(json_str)
     except json.JSONDecodeError:
         # Attempt to clean the JSON string
-        cleaned_json_str = json_str[json_str.find("["):json_str.rfind("]")+1]
+        cleaned_json_str = json_str[json_str.find("["):json_str.rfind("]") + 1]
         return json.loads(cleaned_json_str)
 
+
 # Function to find the current call list
-def find_current_call_list(idx):
-    if idx == 0:
-        return calls_for_mi1_list
-    elif idx == 1:
-        return calls_for_mi2_list
-    elif idx == 2:
-        return calls_for_mi3_list
-    else:
+def find_current_call_list(input_dir, idx):
+    call_files = [f"CallsInfo_{i+1}.json" for i in range(3)]
+    try:
+        call_filepath = os.path.join(input_dir, call_files[idx])
+        return format_call_types(call_filepath)
+    except IndexError:
         print(f"No file defined for index {idx}")
         return []
 
-system_prompt = f"""Your response should follow a predefined structure which will be passed to you as context."""
+
+system_prompt = """Your response should follow a predefined structure which will be passed to you as context."""
 
 def main(input_dir, output_dir):
+    groq_api_key = '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'
+    client = Groq(api_key=groq_api_key)
 
+    # Hard-coded file paths
+    differentMI_filepath = "C:/Users/sslavov/Desktop/python api calls/First API Call/Micro-Industries/microIndustries.json"
+    miProfile_filepath = "C:/Users/sslavov/Desktop/python api calls/First API Call/Micro-Industries/MicroIndustriesProfiles"
+
+    # Load micro-industry types
+    micro_industries_data = load_json(differentMI_filepath)
+    micIndustry_array = micro_industries_data.get('micro-industries', [])
+
+    # Load micro-industry profile
+    mi_profile_list = load_json_files(miProfile_filepath)
+
+    # Parsing the Introduction sections from the mi_profile_list
+    introduction_list = parse_introductions(mi_profile_list)
+
+    # Parsing the Activities sections from the mi_profile_list
+    activities_list = parse_activities(mi_profile_list)
+
+    # Parsing the Types of Businesses sections from the mi_profile_list
+    businesses_list = parse_types_of_businesses(mi_profile_list)
 
     # Loop for API call
     for idx, microIndustry in enumerate(micIndustry_array, start=0):
-        current_call_list = find_current_call_list(idx)
-        random_call_index = random.randint(0, 9)
+        current_call_list = find_current_call_list(input_dir, idx)
+        if not current_call_list:
+            continue  # Skip if no calls are found
+
+        random_call_index = random.randint(0, len(current_call_list) - 1)
         try:
             completion = client.chat.completions.create(
                 model="llama3-70b-8192",
@@ -149,47 +141,47 @@ def main(input_dir, output_dir):
                         "role": "user",
                         "content": f"""Act as an expert contact center call scoring coach with great experience in the subject.
 
-    I'll give you a generic Contact Center Call Scoring Template as a reference.
+I'll give you a generic Contact Center Call Scoring Template as a reference.
 
-    Your task is to generate a new Contact Center Call Scoring Template for a specific micro-industry, adhering to the rules and guidelines below.
+Your task is to generate a new Contact Center Call Scoring Template for a specific micro-industry, adhering to the rules and guidelines below.
 
-    Make sure you cover all sections and questions from the example given below in your output. Do not skip a question unless absolutely necessary to do so.
+Make sure you cover all sections and questions from the example given below in your output. Do not skip a question unless absolutely necessary to do so.
 
-    The micro-industry is: {microIndustry}
+The micro-industry is: {microIndustry}
 
-    The micro-industry profile is:
-    {introduction_list[idx]}
+The micro-industry profile is:
+{introduction_list[idx]}
 
-    Activities
-    {activities_list[idx]}
+Activities
+{activities_list[idx]}
 
-    Types of Businesses
-    {businesses_list[idx]}
+Types of Businesses
+{businesses_list[idx]}
 
-    Contact Center Call Type Info
-    {current_call_list[random_call_index]}
+Contact Center Call Type Info
+{current_call_list[random_call_index]}
 
-    The Contact Center Call Scoring template should have the following sections:
-    - Greeting 
-    - Customer Identification 
-    - Needs Identification 
-    - Solution Proposal 
-    - Value Add / Upsell 
-    - Closing 
-    - Rapport
+The Contact Center Call Scoring template should have the following sections:
+- Greeting 
+- Customer Identification 
+- Needs Identification 
+- Solution Proposal 
+- Value Add / Upsell 
+- Closing 
+- Rapport
 
-    The output format should be a JSON object with the following structure:
-    {{
-        "Index": "number",
-        "Section": "section name",
-        "Question": "question text",
-        "Scoring": "Yes / No",
-        "Scoring Criteria": "**Yes:** detailed criteria **No:** detailed criteria"
-    }}
+The output format should be a JSON object with the following structure:
+{{
+    "Index": "number",
+    "Section": "section name",
+    "Question": "question text",
+    "Scoring": "Yes / No",
+    "Scoring Criteria": "**Yes:** detailed criteria **No:** detailed criteria"
+}}
 
-    Your response must include all the sections and questions in the same size as the 'Contact Center Call Scoring Template' provided below. Please ensure the response is exactly the same length and structure as the example provided below. Also your response should not include information that is not in JSON format. Here is the template for reference:
+Your response must include all the sections and questions in the same size as the 'Contact Center Call Scoring Template' provided below. Please ensure the response is exactly the same length and structure as the example provided below. Also your response should not include information that is not in JSON format. Here is the template for reference:
 
-    [
+[
         {{
             "Index": "1",
             "Section": "Greeting",
@@ -373,16 +365,16 @@ def main(input_dir, output_dir):
             "Scoring Criteria": "**Yes:** Agent made positive affirmations, thanked the customer for their business, and made them feel their issue was important. **No:** Agent did not make any effort to make the customer feel valued or appreciated."
         }}
     ]
-    """
+"""
                     }
                 ]
             )
-            print(current_call_list[random_call_index])
-            completion_json_str = completion['choices'][0]['message']['content']
+            # Access the content correctly from the response object
+            completion_json_str = completion.choices[0].message.content
             validated_completion = validate_and_clean_json(completion_json_str)
 
             # Define the output path and write the JSON response to a file
-            output_path = os.path.join(output_dir, f"scoring_template_{idx}.json")
+            output_path = os.path.join(output_dir, f"scoring_template_{idx+1}.json")
             with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(validated_completion, f, ensure_ascii=False, indent=4)
                 print(f"Scoring template saved at: {output_path}")
@@ -393,6 +385,4 @@ def main(input_dir, output_dir):
 if __name__ == "__main__":
     input_dir = 'C:/Users/sslavov/Desktop/python api calls/First API Call/Micro-Industries/CallCenterCallTypesInfo'
     output_dir = 'C:/Users/sslavov/Desktop/python api calls/First API Call/Micro-Industries/ScoringTemplates'
-
     main(input_dir, output_dir)
-

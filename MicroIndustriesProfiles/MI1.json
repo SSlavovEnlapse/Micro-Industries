@@ -1,21 +1,19 @@
 {
-    "micro-industry": "DIY Stores",
+    "micro-industry": "DIY stores",
     "sections": {
         "Introduction": {
-            "definition": "DIY stores or home improvement stores are retail businesses that specialize in providing materials, tools, and supplies for customers to undertake do-it-yourself (DIY) projects and improve their homes and properties.",
-            "scope": "The DIY store micro-industry plays a significant role in the broader home improvement and construction industry, catering to the needs of homeowners, professionals, and DIY enthusiasts alike. Its scope extends beyond just selling products, as these stores often provide expert advice, tutorials, and workshops to facilitate the DIY process."
+            "definition": "DIY stores are retail establishments that provide materials, tools, and expertise for customers to complete do-it-yourself projects and repairs, enabling them to create or improve their living and working spaces.",
+            "scope": "As a micro-industry, DIY stores play a significant role within the broader retail industry, catering to consumers seeking creative outlets, cost-effective solutions, and personalized assistance."
         },
         "Types of Businesses": [
             "**Retail Stores**: Large chain stores and small local shops that sell tools, materials, and supplies for DIY projects.",
-            "**E-commerce Platforms**: Online stores that offer a wide range of DIY products and services, often with options for delivery, home installation, or in-store pickup.",
-            "**Hardware Stores**: Stores that focus on selling hardware, building materials, and supplies for construction and renovation projects.",
-            "**Specialty Stores**: Stores that concentrate on specific areas, such as garden centers, nurseries, or pet supplies, which cater to the needs of DIY enthusiasts."
+            "**Online Retailers**: E-commerce platforms offering a wide range of DIY products and services, often with fast shipping and competitive pricing.",
+            "**Home Centers**: Large warehouse-style stores offering a vast selection of building materials, tools, and hardware for DIY enthusiasts and professionals alike."
         ],
         "Activities": [
             "**Renovation Projects**: Updating kitchens, bathrooms, living spaces, and other areas to improve functionality and aesthetics.",
-            "**Home Decor**: Adding decorative elements, such as painting, wallpaper, or furniture, to enhance the visual appeal of a home or property.",
-            "**Gardening**: Planting, maintaining, and improving outdoor spaces, including gardens, lawns, and outdoor decor.",
-            "**Home Improvement**: Making general repairs, maintenance, and improvements to a home or property, such as carpentry, electrical work, or plumbing."
+            "**Home Improvement**: Performing repairs, maintenance, and customization tasks to enhance and personalize living spaces.",
+            "**Creative Projects**: Creating crafts, art, and other custom items using DIY materials and techniques."
         ],
         "Top Brands": {
             "Americas": [
@@ -24,14 +22,14 @@
                 "Menards"
             ],
             "EMEA": [
-                "Wickes",
+                "Kingfisher",
                 "B&Q",
-                "IKEA"
+                "Asda"
             ],
             "Asia-Pacific": [
-                "Woolworths",
+                "The Warehouse",
                 "Bunnings Warehouse",
-                "Takahashi"
+                "Lixil"
             ]
         }
     }
